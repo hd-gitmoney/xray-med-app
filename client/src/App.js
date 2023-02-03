@@ -1,4 +1,5 @@
 import './App.css';
+import Menu from './components/menu.js';
 
 import { useApi } from './hooks/use-api';
 
@@ -10,8 +11,7 @@ function App() {
       <header className="App-header">
         <p>
           {/*{response}*/ }
-
-          <h1>You a bitch Anthony</h1>
+          <Menu/>
         </p>
       </header>
     </div>
