@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
-function Xray({ allValues }){
+function Xray({ xray }){
     return (
-        <h1>"single xray"</h1>
+        <div>
+            <h1>{xray.patientId}</h1>
+        </div>
     ); 
 }
 

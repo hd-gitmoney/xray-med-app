@@ -25,9 +25,7 @@ function XrayForm() {
 
     const handleOnClick = (e) => {
         e.preventDefault();
-        console.log(allValues)
-        setAllValues({...allValues, [e.target.name] : e.target.value})
-        setAllValues({isSubmitted: true})
+        setAllValues({...allValues, isSubmitted: true})
     }
 
     useEffect(() => {
@@ -36,8 +34,8 @@ function XrayForm() {
 
         return (
             <div className="centerform">
-                {console.log(allValues)}
-                    <Xray allValues={allValues}/> :
+                {allValues.isSubmitted ? 
+                    <Xray xray={allValues}/> :
                     <Form>
                         <Form.Group controlId="formPatientId">
                             <Form.Label>Patient ID</Form.Label>
