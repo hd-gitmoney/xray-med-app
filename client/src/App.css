@@ -1,1 +1,13 @@
 
+.centerform {
+  margin: auto;
+  margin-top: 50px;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.aligndivs{
+  float: left;
+  margin-left: 20px;
+}

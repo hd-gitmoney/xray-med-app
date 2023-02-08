@@ -1,25 +1,34 @@
-import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import {Button, Container, Form, Nav, Navbar} from 'react-bootstrap';
+import {LinkContainer} from 'react-router-bootstrap'
 
-class Menu extends Component {
-    state = {  } 
-    render() { 
-        return (
-            <Navbar bg="dark" variant="dark">
-            <Container>
-              <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-              <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
-              </Nav>
-            </Container>
-          </Navbar>
-         
-        );
-    }
+function Menu() {
+  return (
+    <Navbar  bg="dark" variant="dark">
+      <Container fluid>
+        <LinkContainer to="/">
+          <Navbar.Brand href="#home">X-ray's Project</Navbar.Brand>
+        </LinkContainer>
+          <Nav
+            className="me-auto my-2 my-lg-0">
+            <LinkContainer to="/">
+              <Nav.Link>Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/newx-ray">
+              <Nav.Link>Create New X-Ray</Nav.Link>
+            </LinkContainer>
+          </Nav>
+          <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search X-Rays"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+      </Container>
+    </Navbar>
+  );
 }
- 
+
 export default Menu;

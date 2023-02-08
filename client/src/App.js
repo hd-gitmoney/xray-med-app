@@ -1,18 +1,21 @@
-import './App.css';
 import Menu from './components/menu.js';
+import { Routes, Route} from 'react-router-dom'
+import XrayList from './components/xrayList';
+import XrayForm from './components/xrayForm';
+import Xray from './components/xray';
 
 import { useApi } from './hooks/use-api';
 
 function App() {
- {/* const { response } = useApi();*/}
-
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          {/*{response}*/ }
           <Menu/>
-        </p>
+            <Routes>
+              <Route exact path="/" element={<XrayList/>} />
+              <Route path="/newx-ray" element={<XrayForm/>} />
+              <Route path="/x-ray" element={<Xray/>} />
+            </Routes>
       </header>
     </div>
   );
