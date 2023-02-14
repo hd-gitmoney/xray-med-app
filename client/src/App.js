@@ -1,8 +1,9 @@
-import Menu from './components/menu.js';
+import NavBar from './components/Navbar/Navbar.js';
 import { Routes, Route} from 'react-router-dom'
-import XrayList from './components/xrayList';
+import Home from './components/Home/Home';
+import Admin from './components/Admin/Admin.js';
 import XrayForm from './components/xrayForm';
-import Xray from './components/xray';
+import ExamDetails from './components/ExamDetails/ExamDetails.js';
 
 import { useApi } from './hooks/use-api';
 
@@ -10,11 +11,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <Menu/>
+          <NavBar />
             <Routes>
-              <Route exact path="/" element={<XrayList/>} />
+              <Route exact path="/" element={<Home />} />
+              <Route path="/admin" element={<Admin />} />
+              <Route path="/examdetails" element={<ExamDetails />} /> 
               <Route path="/newx-ray" element={<XrayForm/>} />
-              <Route path="/x-ray" element={<Xray/>} />
             </Routes>
       </header>
     </div>
