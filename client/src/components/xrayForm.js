@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {Button, Form, Col, Container, Row} from 'react-bootstrap';
-import Xray from './xray'
+import { useNavigate } from 'react-router-dom';
+import ExamDetails from './ExamDetails/ExamDetails.js'
 import '../App.css'
 
 function XrayForm() {
@@ -15,6 +16,7 @@ function XrayForm() {
         zipCode: "",
         isSubmitted: false,
     };
+    const navigate = useNavigate()
 
     const [allValues, setAllValues] = useState(initialValues)
 
@@ -26,6 +28,7 @@ function XrayForm() {
     const handleOnClick = (e) => {
         e.preventDefault();
         setAllValues({...allValues, isSubmitted: true})
+        // navigate('/x-ray')
     }
 
     useEffect(() => {
@@ -35,7 +38,7 @@ function XrayForm() {
         return (
             <div className="centerform">
                 {allValues.isSubmitted ? 
-                    <Xray xray={allValues}/> :
+                    <ExamDetails xray={allValues}/> :
                     <Form>
                         <Form.Group controlId="formPatientId">
                             <Form.Label>Patient ID</Form.Label>
@@ -110,6 +113,7 @@ function XrayForm() {
                             placeholder="Enter Zip Code"
                             onChange={handleOnchange} />
                         </Form.Group>
+                        
                         <Button
                         onClick={handleOnClick} 
                         variant="primary" 
