@@ -16,6 +16,8 @@ function XrayForm() {
         zipCode: "",
         isSubmitted: false,
     };
+
+
     const navigate = useNavigate()
 
     const [allValues, setAllValues] = useState(initialValues)
@@ -114,6 +116,7 @@ function XrayForm() {
                             onChange={handleOnchange} />
                         </Form.Group>
                         
+
                         <Button
                         onClick={handleOnClick} 
                         variant="primary" 
