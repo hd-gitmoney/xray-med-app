@@ -1,21 +1,13 @@
-.App {
-  text-align: center;
+
+.centerform {
+  margin: auto;
+  margin-top: 50px;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: #61dafb;
+.aligndivs{
+  float: left;
+  margin-left: 20px;
 }

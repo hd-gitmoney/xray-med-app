@@ -15,3 +15,9 @@ export function useApi({ path } = { path: '' }) {
     response
   };
 }
+
+//fetches go here?
+//export const fetchXRay = (examID) => API_ROOT.get(`/examdetails/${examID}`)
+//export const createExam = (newExam) => API_ROOT.post('/', newExam);
+//export const updateExam = (examID, updateExam) => API_ROOT.patch(`/examdetails/${examID}`, updatePost); patch replaces some of the data, put replaces all the data
+//export const deleteExam = (examID) => API_ROOT.delete(`/examdetails/${examID}`);
