@@ -16,6 +16,8 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/examdetails" element={<ExamDetails />} /> 
+              {/* TODO */}
+              {/* replace path for exam details with examID */}
               <Route path="/newx-ray" element={<XrayForm/>} />
             </Routes>
       </header>
