@@ -8,15 +8,15 @@ const mongoose = require('mongoose');
 const url = process.env.MONG_URL;
 mongoose
   .connect(url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
+    // useFindAndModify: false,
+    // useCreateIndex: true,
   })
   ///
-  connection.once('open', () => {
-    console.log("MongoDB database connection established successfully");
-  })
+  // connect.once('open', () => {
+  //   console.log("MongoDB database connection established successfully");
+  // })
   ///
   .then(() => {
     console.log('Connection estabislished with MongoDB');
@@ -28,4 +28,4 @@ mongoose
 const db = mongoose.connection;
 
 module.exports = db;
-    console.log("MongoDB database connection established successfully");
+console.log("MongoDB database connection established successfully");

@@ -10,6 +10,8 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+const dbo = require("./db/index");
+
 app.use(logger('dev'));
 app.use(cors());
 app.use(express.json());
