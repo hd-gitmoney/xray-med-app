@@ -1,13 +1,28 @@
-import React, { Component } from 'react';
+// import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 import Placeholder from 'react-bootstrap/Placeholder';
 //TODO
 //https://react-bootstrap.github.io/components/placeholder/
 
+
+
 const Home = () => {
-    // state = {  } 
-    // render() { 
+    // const [exams, setExams] = useState(null)
+
+    // useEffect(() => {
+    //   const fetchExams = async () => {
+    //     const response = await fetch('/api/exams')
+    //     const json = await response.json()
+  
+    //     if (response.ok) {
+    //       setExams(json)
+    //     }
+    //   }
+  
+    //   fetchExams()
+    // }, [])
+
     return(
         <Table striped="columns" bordered hover>
             <thead>
