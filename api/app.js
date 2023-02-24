@@ -12,6 +12,7 @@ var app = express();
 
 app.use(logger('dev'));
 app.use(cors());
+//middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -37,3 +38,6 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+//install nodemon
+//"dev": "nodemon app.js"
