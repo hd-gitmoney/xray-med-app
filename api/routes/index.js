@@ -1,12 +1,10 @@
-import express from 'express';
-import { createExam, getExam, getExams, updateExam, deleteExam } from '../controllers/exams';
+// var express = require('express');
+// var router = express.Router();
 
-const router = express.Router();
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.send('API is working properly!');
-});
+// /* GET home page. */
+// router.get('/', function(req, res, next) {
+//   res.send('API is working properly!');
+// });
 
 //GET single xray exam
 router.get('/:id', function(req, res){
@@ -27,6 +25,6 @@ router.delete('/:id', function(req, res){
 router.patch('/:id', function(req, res){
   res.json({mssg: "UPDATE this exam"})
 })
-module.exports = router;
+// module.exports = router;
 
 export default router;
