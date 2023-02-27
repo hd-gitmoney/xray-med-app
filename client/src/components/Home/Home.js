@@ -1,13 +1,42 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState} from 'react';
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 import Placeholder from 'react-bootstrap/Placeholder';
-//TODO
-//https://react-bootstrap.github.io/components/placeholder/
+import Examitem from './ExamItem';
 
-const Home = () => {
-    // state = {  } 
-    // render() { 
+// const API_ROOT = 'https://czi-covid-1-hjgxknco3a-uc.a.run.app/api/exams';
+
+// export function useApi({ path } = { path: '' }) {
+//   const [response, setResponse] = useState();
+
+//   useEffect(() => {
+//     fetch(`${API_ROOT}/${path}`)
+//       .then(res => res.json())
+//       .then(res => setResponse(res));
+//   }, []);
+
+//   return {
+//     response
+//   };
+// }
+
+
+//TODO
+
+//https://react-bootstrap.github.io/components/placeholder/
+function Home() {
+    const [exams, setExams] = useState([]);
+  
+    useEffect(() => {
+      fetch("https://czi-covid-1-hjgxknco3a-uc.a.run.app/api/exams")
+        .then(response => response.json())
+        .then(response => {
+            setExams(response);
+            console.log(`EXAMS: ${exams}`);
+            
+        });
+    }, [])
+
     return(
         <Table striped="columns" bordered hover>
             <thead>
@@ -69,6 +98,11 @@ const Home = () => {
                     <td>Otto</td>
                     <td>Otto</td>
                 </tr>
+                {
+              exams.map(exam => (
+                <Examitem exam={exam} key={exam._id} />
+              ))
+            }
             </tbody>
         </Table>
         );
