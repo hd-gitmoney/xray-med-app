@@ -5,7 +5,8 @@ const Schema = mongoose.Schema
 const examSchema = new Schema({
     patiendId: {
         type: String,
-        required: true
+        required: true,
+        ref: 'Patient'
     },
     age: {
         type: Number,
@@ -44,5 +45,9 @@ const examSchema = new Schema({
         require: true
     }
 })
+const databaseName = "exams";
+const collectionName = "exams";
+const myDB = mongoose.connection.useDb(databaseName);
 
-module.exports = mongoose.model('Exam', examSchema)
+
+module.exports = myDB.model('Exam', examSchema, collectionName);
