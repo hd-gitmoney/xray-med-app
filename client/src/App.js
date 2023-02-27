@@ -8,8 +8,8 @@ import ExamDetails from './components/ExamDetails/ExamDetails.js';
 import { useApi } from './hooks/use-api';
 
 function App() {
-  const { response } = useApi();
-  {console.log(response)}
+  const { exams } = useApi();
+ console.log(exams)
   return (
     <div className="App">
       <header className="App-header">

@@ -3,16 +3,33 @@ import { useState, useEffect } from 'react';
 const API_ROOT = 'http://localhost:9000';
 
 export function useApi({ path } = { path: '' }) {
-  const [response, setResponse] = useState();
+  const [exams, setExams] = useState();
+
+  const fetchExams = () => {
+    fetch(`${API_ROOT}/${path}`)
+    .then((examObj) => {
+      return examObj.json()
+    })
+    .then((examObj) => {
+      setExams(examObj)
+    })
+  }
+
+  // //    const fetchExams = async () => {
+  //   const response = await fetch(`${API_ROOT}/${path}`)
+  //   const json = await response.json()
+
+  //   if(response.ok){
+  //     setExams(json)
+  //   }
+  // }
 
   useEffect(() => {
-    fetch(`${API_ROOT}/${path}`)
-      .then(res => res.text())
-      .then(res => setResponse(res));
+    fetchExams();
   }, []);
 
   return {
-    response
+    exams
   };
 }
 

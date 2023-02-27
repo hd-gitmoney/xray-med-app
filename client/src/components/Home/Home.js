@@ -8,21 +8,6 @@ import Placeholder from 'react-bootstrap/Placeholder';
 
 
 const Home = () => {
-    // const [exams, setExams] = useState(null)
-
-    // useEffect(() => {
-    //   const fetchExams = async () => {
-    //     const response = await fetch('/api/exams')
-    //     const json = await response.json()
-  
-    //     if (response.ok) {
-    //       setExams(json)
-    //     }
-    //   }
-  
-    //   fetchExams()
-    // }, [])
-
     return(
         <Table striped="columns" bordered hover>
             <thead>
