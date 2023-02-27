@@ -29,6 +29,6 @@ npm start
 You should then be able to visit `localhost:9000` in your browser and see the server running.
 
 # Things to add
-- Create a `.env` file in the api folder and add the following as `key: value` 
-  - PORT: `can be any port example: 3000`
-  - DB_STRING: `your database URI`
+- Create a `.env` file in the api folder and add the following as `key=value` 
+  - PORT= `can be any port example: 3000`
+  - MONG_URI= `your database URI`
