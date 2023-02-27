@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const API_ROOT = 'http://localhost:9000';
 
 export function useApi({ path } = { path: '' }) {
-  const [exams, setExams] = useState();
+  const [exams, setExams] = useState([]);
 
   const fetchExams = () => {
     fetch(`${API_ROOT}/${path}`)

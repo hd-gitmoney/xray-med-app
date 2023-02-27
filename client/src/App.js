@@ -9,13 +9,12 @@ import { useApi } from './hooks/use-api';
 
 function App() {
   const { exams } = useApi();
- console.log(exams)
   return (
     <div className="App">
       <header className="App-header">
           <NavBar />
             <Routes>
-              <Route exact path="/" element={<Home />} />
+              <Route exact path="/" element={<Home exams={exams} />} />
               <Route path="/admin" element={<Admin />} />
               <Route path="/examdetails" element={<ExamDetails />} /> 
               {/* TODO */}
