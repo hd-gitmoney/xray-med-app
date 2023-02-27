@@ -2,7 +2,7 @@ import React, { Component, useEffect, useState} from 'react';
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 import Placeholder from 'react-bootstrap/Placeholder';
-import Examitem from './ExamItem';
+//import Examitem from './ExamItem';
 
 // const API_ROOT = 'https://czi-covid-1-hjgxknco3a-uc.a.run.app/api/exams';
 
