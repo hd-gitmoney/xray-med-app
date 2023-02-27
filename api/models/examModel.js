@@ -49,6 +49,8 @@ const examSchema = new Schema({
     }
 })
 
+//connecting to cluster named
+
 const databaseName = "exams"
 const collectionName = "exams"
 const myDB = mongoose.connection.useDb(databaseName)
