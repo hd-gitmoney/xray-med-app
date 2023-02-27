@@ -1,5 +1,5 @@
-// var express = require('express');
-// var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 // /* GET home page. */
 // router.get('/', function(req, res, next) {
@@ -25,6 +25,7 @@ router.delete('/:id', function(req, res){
 router.patch('/:id', function(req, res){
   res.json({mssg: "UPDATE this exam"})
 })
-// module.exports = router;
 
-export default router;
+module.exports = router;
+
+//export default router;
