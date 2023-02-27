@@ -27,15 +27,17 @@ import Examitem from './ExamItem';
 function Home() {
     const [exams, setExams] = useState([]);
   
-    useEffect(() => {
-      fetch("https://czi-covid-1-hjgxknco3a-uc.a.run.app/api/exams")
-        .then(response => response.json())
-        .then(response => {
-            setExams(response);
-            console.log(`EXAMS: ${exams}`);
+    //TODO
+    //this use effect needs to be moved and fetch needs to handle async/await
+    // useEffect(() => {
+    //   fetch("https://czi-covid-1-hjgxknco3a-uc.a.run.app/api/exams")
+    //     .then(response => response.json())
+    //     .then(response => {
+    //         setExams(response);
+    //         console.log(`EXAMS: ${exams}`);
             
-        });
-    }, [])
+    //     });
+    // }, [exams, setExams])
 
     return(
         <Table striped="columns" bordered hover>
@@ -98,11 +100,13 @@ function Home() {
                     <td>Otto</td>
                     <td>Otto</td>
                 </tr>
-                {
+
+                {/* TODO */}
+                {/* {
               exams.map(exam => (
                 <Examitem exam={exam} key={exam._id} />
               ))
-            }
+            } */}
             </tbody>
         </Table>
         );
