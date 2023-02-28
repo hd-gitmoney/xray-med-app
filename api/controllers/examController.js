@@ -31,11 +31,11 @@ const getExam = async (req, res) => {
 //create a new exam
 const createExam = async (req,res) => {
     //grabbing the properties from the request body
-    const { patientId, sex, age, zip, latestBmi,latestWeight, pngFilename, examId, icuAdmit, numIcuAdmit, mortality } = req.body
+    const { PATIENT_ID, AGE, SEX, ZIP, LATEST_BMI,LATESTWEIGHT, png_filename, exam_Id, ICU_Admit, NUM_ICU_admits, MORTALITY } = req.body
     //either try to create exam or catch error and adding to DB
     try{
         //creating a new exam
-        const exam = await Exam.create({ patientId, sex, age, zip, latestBmi,latestWeight, pngFilename, examId, icuAdmit, numIcuAdmit, mortality })
+        const exam = await Exam.create({ PATIENT_ID, AGE, SEX, ZIP, LATEST_BMI,LATESTWEIGHT, png_filename, exam_Id, ICU_Admit, NUM_ICU_admits, MORTALITY })
         res.status(200).join(exam)
     } catch (error) {
         res.status(400).json({error: error.message})
