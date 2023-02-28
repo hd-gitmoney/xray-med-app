@@ -3,51 +3,57 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const examSchema = new Schema({
-    patiendId: {
+    PATIENT_ID: {
         type: String,
         required: true,
         ref: 'Patient'
     },
-    age: {
+    AGE: {
         type: Number,
         required: true
     },
-    sex: {
+    SEX: {
         type: String,
         require: true
     },
-    zipCode: {
-        type: String,
-        require: true
-    },
-    latestBmi: {
+    ZIP: {
         type: Number,
         require: true
     },
-    examId: {
-        type: String,
-        require: true
-    },
-    latestWeight: {
+    LATEST_BMI: {
         type: Number,
         require: true
     },
-    imageURL: {
-        type: String,
-        require: true
-    },
-    icuAdmit: {
+    LATESTWEIGHT: {
         type: Number,
         require: true
     },
-    mortality: {
+    png_filename: {
+        type: String,
+        require: true
+    },
+    exam_Id: {
+        type: String,
+        require: true
+    },
+    ICU_Admit: {
+        type: String,
+        require: true
+    },
+    NUM_ICU_admits: {
+        type: Number,
+        require: true
+    },
+    MORTALITY: {
         type: String,
         require: true
     }
 })
-const databaseName = "exams";
-const collectionName = "exams";
-const myDB = mongoose.connection.useDb(databaseName);
 
 
-module.exports = myDB.model('Exam', examSchema, collectionName);
+//connecting to cluster named
+
+const databaseName = "exams"
+const collectionName = "exams"
+const myDB = mongoose.connection.useDb(databaseName)
+module.exports = myDB.model('Exam', examSchema, collectionName)

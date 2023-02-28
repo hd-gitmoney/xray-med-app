@@ -1,62 +1,91 @@
-//Pam
-import express from 'express';
-import mongoose from 'mongoose';
+const Exam = require('../models/examModel')
+const mongoose = require('mongoose')
 
-import PostMessage from '../models/postExam';
 
-const router = express.Router();
-
-export const getExams = async (req, res) => {
-
+//get all exams
+const getExams = async (req, res) =>{
+    //finds all the exams
+    const exams = await Exam.find()
+    //sends an okay message and an array of exams
+    res.status(200).json(exams)
 }
 
-export const getExam = async (req, res) => {
-    const { id } = req.params;
+//get a single exam
+const getExam = async (req, res) => {
+    //gets the id from the url
+    const { id } = req.params
+    //checks to see if the id is valid for mongoose
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(404).json({error: 'No such exam'})
+      }
+    //finds the exam from db
+    const exam = await Exam.findById(id)
+    //if no exam is found returns error mssg
+    if(!exam){
+        return res.status(401).json({error: 'No such exam'})
+    }
+    //if exam found sends back it back to the front
+    res.status(200).json(exam)
+}
 
+//create a new exam
+const createExam = async (req,res) => {
+    //grabbing the properties from the request body
+    const { PATIENT_ID, AGE, SEX, ZIP, LATEST_BMI,LATESTWEIGHT, png_filename, exam_Id, ICU_Admit, NUM_ICU_admits, MORTALITY } = req.body
+    //either try to create exam or catch error and adding to DB
     try{
-        const exam = await PostMessage.findById(id);
-
-        res.status(200).json(post);
-    }catch(error){
-        res.status(404).json({ message: error.message });
+        //creating a new exam
+        const exam = await Exam.create({ PATIENT_ID, AGE, SEX, ZIP, LATEST_BMI,LATESTWEIGHT, png_filename, exam_Id, ICU_Admit, NUM_ICU_admits, MORTALITY })
+        res.status(200).join(exam)
+    } catch (error) {
+        res.status(400).json({error: error.message})
     }
 }
 
-export const createExam = async (req, res) => {
-    const exam = req.body;
+//delete a exam
+const deleteExam = async (req, res) => {
+    //get the exam you want to delete
+    const { id } = req.params
+    //checks if it is a valid Id
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(404).json({error: 'No such exam'})
+      }
 
-    const newPostMessage = new PostMessage;
-
-    try{
-        await newPostMessage.save();
-
-        res.status(201).json(newPostMessage);
-    }catch (error) {
-        res.status(409).json({ message: error.message });
+      const exam = await Exam.findOneAndDelete({_id: id})
+      //if it does not find the exam
+      if(!exam){
+        return res.status(401).json({error: 'No such exam'})
     }
+
+    res.status(200).json(exam)
+
 }
 
-export const updateExam = async (req, res) => {
-    const { id } = req.params;
-    const { age, sex, zip, latest_bmi, latest_weight, icu_admit, num_icu_admits, mortality, notes } = req.body;
+//update a exam
+const updateExam = async (req, res) => {
+    //get the exam you want to delete
+    const { id } = req.params
+      //checks if it is a valid Id
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(404).json({error: 'No such exam'})
+    }
+        
+    const exam = await exam.findOneAndUPdate({_id: id}, {
+        ...req.body
+    })
 
-    if(!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No exam with id: ${id}`);
+    if(!exam){
+        return res.status(401).json({error: 'No such exam'})
+    }
 
-    const updatedExam = { age, sex, zip, latest_bmi, latest_weight, icu_admit, num_icu_admits, mortality, notes, _id: id };
+    res.status(200).json(exam)
 
-    await PostMessage.findByIdAndUpdate(id, updatedExam, {new: true });
-
-    res.json(updatedPost);
 }
 
-export const deleteExam = async (req, res) => {
-    const { id } = req.params;
-
-    if(!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No exam with id: ${id}`);
-
-    await PostMessage.findByIdAndRemove(id);
-
-    res.json({ message: 'Exam deleted succesfully'});
+module.exports = {
+    getExams,
+    getExam,
+    createExam,
+    deleteExam,
+    updateExam
 }
-
-export default router;

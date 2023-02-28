@@ -1,112 +1,50 @@
-import React, { Component, useEffect, useState} from 'react';
+// import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 import Placeholder from 'react-bootstrap/Placeholder';
-//import Examitem from './ExamItem';
-
-// const API_ROOT = 'https://czi-covid-1-hjgxknco3a-uc.a.run.app/api/exams';
-
-// export function useApi({ path } = { path: '' }) {
-//   const [response, setResponse] = useState();
-
-//   useEffect(() => {
-//     fetch(`${API_ROOT}/${path}`)
-//       .then(res => res.json())
-//       .then(res => setResponse(res));
-//   }, []);
-
-//   return {
-//     response
-//   };
-// }
-
 
 //TODO
 
 //https://react-bootstrap.github.io/components/placeholder/
-function Home() {
-    const [exams, setExams] = useState([]);
-  
-    //TODO
-    //this use effect needs to be moved and fetch needs to handle async/await
-    // useEffect(() => {
-    //   fetch("https://czi-covid-1-hjgxknco3a-uc.a.run.app/api/exams")
-    //     .then(response => response.json())
-    //     .then(response => {
-    //         setExams(response);
-    //         console.log(`EXAMS: ${exams}`);
-            
-    //     });
-    // }, [exams, setExams])
 
+
+
+const Home = ({exams}) => {
     return(
         <Table striped="columns" bordered hover>
             <thead>
                 <tr>
                     <th>Patient ID</th>
-                    <th>Exam ID</th>
                     <th>Age</th>
                     <th>Sex</th>
                     <th>Zip</th>
                     <th>Latest BMI</th>
                     <th>Latest Weight</th>
                     <th>Image</th>
+                    <th>Exam ID</th>
                     <th>ICU Admit</th>
                     <th># ICU Admits</th>
                     <th>Mortality</th>
-                    <th>Notes</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>COVID-19-AR-16434409</td>
-                    <td><Link to="/examdetails">Exam-1</Link></td>
-                    <td>51</td>
-                    <td>M</td>
-                    <td>721</td>
-                    <td>37.7</td>
-                    <td>207</td>
-                    <td>COVID-19-AR-16434409_XR_CHEST_AP_PORTABLE_1.png</td>
-                    <td>N</td>
-                    <td>0</td>
-                    <td>N</td>
-                    <td>Bilateral patchy airspace disease involving both mid and lower lung zones, left worse than the right.</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
-                </tr>
-
-                {/* TODO */}
-                {/* {
-              exams.map(exam => (
-                <Examitem exam={exam} key={exam._id} />
-              ))
-            } */}
+            {exams.map((exam) => {
+                    return <tr key={exam._id}>
+                        <td><Link>{exam.PATIENT_ID}</Link></td>
+                        <td>{exam.AGE}</td>
+                        <td>{exam.SEX}</td>
+                        <td>{exam.ZIP}</td>
+                        <td>{exam.LATEST_BMI}</td>
+                        {/* having trouble showing these but I think its a naming convention problem */}
+                        <td>{exam.LATESTWEIGHT}</td>
+                        <td><img src={`https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/${exam.png_filename}`} className="xrayImages"/></td>
+                        <td>{exam.exam_Id}</td>
+                        {/* having trouble showing these but I think its a naming convention problem */}
+                        <td>{exam.ICU_Admit}</td> 
+                        <td>{exam.NUM_ICU_admits}</td>
+                        <td>{exam.MORTALITY}</td>
+                    </tr>
+                })}
             </tbody>
         </Table>
         );

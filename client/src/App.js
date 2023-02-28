@@ -9,15 +9,14 @@ import ExamDetails from './components/ExamDetails/ExamDetails.js';
 import { useApi } from './hooks/use-api';
 
 function App() {
-  const { response } = useApi();
-  {console.log(response)}
+  const { exams } = useApi();
   return (
     <div className="App">
       <header className="App-header">
           <NavBar />
             <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route path="/admin" element={<Admin />} />
+              <Route exact path="/" element={<Home exams={exams} />} />
+              <Route path="/admin" element={<Admin exams={exams} />} />
               <Route path="/examdetails" element={<ExamDetails />} /> 
               {/* TODO */}
               {/* replace path for exam details with examID */}
