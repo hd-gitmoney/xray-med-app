@@ -35,7 +35,7 @@ const Admin = ({exams}) => {
                         <td>{exam.LATEST_BMI}</td>
                         {/* having trouble showing these but I think its a naming convention problem */}
                         <td>{exam.LATESTWEIGHT}</td>
-                        <td><img src={exam.png_filename}/></td>
+                        <td><img src={`https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/${exam.png_filename}`} className="xrayImages"/></td>
                         <td>{exam.exam_Id}</td>
                         {/* having trouble showing these but I think its a naming convention problem */}
                         <td>{exam.ICU_Admit}</td> 
