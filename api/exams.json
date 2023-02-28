@@ -1,0 +1,1576 @@
+[{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf5042fd"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434409",
+  "AGE": "51",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "37.7",
+  "LATEST WEIGHT": "207",
+  "png_filename": "COVID-19-AR-16434409_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf5042fe"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434381",
+  "AGE": "44",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "64.6",
+  "LATEST WEIGHT": "412",
+  "png_filename": "COVID-19-AR-16434381_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf5042ff"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406513",
+  "AGE": "44",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "33.3",
+  "LATEST WEIGHT": "190",
+  "png_filename": "COVID-19-AR-16434381_XR_CHEST_AP_ONLY_1.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504300"
+  },
+  "PATIENT_ID": "COVID-19-AR-16439216",
+  "AGE": "61",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "36",
+  "LATEST WEIGHT": "210",
+  "png_filename": "COVID-19-AR-16406513_XR_CHEST_PA_AND_LATERAL_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504301"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406491",
+  "AGE": "49",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "43.85",
+  "LATEST WEIGHT": "280",
+  "png_filename": "COVID-19-AR-16406513_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504302"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406496",
+  "AGE": "75",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "23.57",
+  "LATEST WEIGHT": "155",
+  "png_filename": "COVID-19-AR-16439216_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504303"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424082",
+  "AGE": "48",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "29.8",
+  "LATEST WEIGHT": "207",
+  "png_filename": "COVID-19-AR-16439216_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504304"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406504",
+  "AGE": "39",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "33.5",
+  "LATEST WEIGHT": "203",
+  "png_filename": "COVID-19-AR-16406491_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504305"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434350",
+  "AGE": "55",
+  "SEX": "F",
+  "ZIP": "720",
+  "LATEST_BMI": "27.46",
+  "LATEST WEIGHT": "160",
+  "png_filename": "COVID-19-AR-16406496_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504306"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406502",
+  "AGE": "88",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "34.9",
+  "LATEST WEIGHT": "155",
+  "png_filename": "COVID-19-AR-16406496_XR_CHEST_AP_ONLY_3.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504307"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406494",
+  "AGE": "67",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "28.3",
+  "LATEST WEIGHT": "149",
+  "png_filename": "COVID-19-AR-16424082_XR_CHEST_AP_ONLY_3.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504308"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424105",
+  "AGE": "70",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "18.7",
+  "LATEST WEIGHT": "105",
+  "png_filename": "COVID-19-AR-16424082_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504309"
+  },
+  "PATIENT_ID": "COVID-19-AR-16439195",
+  "AGE": "43",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "33.42",
+  "LATEST WEIGHT": "219",
+  "png_filename": "COVID-19-AR-16424082_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50430a"
+  },
+  "PATIENT_ID": "COVID-19-AR-16445144",
+  "AGE": "77",
+  "SEX": "M",
+  "ZIP": "720",
+  "LATEST_BMI": "28.2",
+  "LATEST WEIGHT": "180",
+  "png_filename": "COVID-19-AR-16406504_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50430b"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424071",
+  "AGE": "70",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "31.2",
+  "LATEST WEIGHT": "230",
+  "png_filename": "COVID-19-AR-16406504_XR_CHEST_AP_ONLY_1.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50430c"
+  },
+  "PATIENT_ID": "COVID-19-AR-16439186",
+  "AGE": "41",
+  "SEX": "F",
+  "ZIP": "720",
+  "LATEST_BMI": "19.9",
+  "LATEST WEIGHT": "116",
+  "png_filename": "COVID-19-AR-16434350_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50430d"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406521",
+  "AGE": "42",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "51.1",
+  "LATEST WEIGHT": "338",
+  "png_filename": "COVID-19-AR-16406502_XR_CHEST_PA_AND_LATERAL_4.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50430e"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406505",
+  "AGE": "40",
+  "SEX": "M",
+  "ZIP": "720",
+  "LATEST_BMI": "38.8",
+  "LATEST WEIGHT": "270",
+  "png_filename": "COVID-19-AR-16406502_XR_CHEST_AP_ONLY_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50430f"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406526",
+  "AGE": "77",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "29.4",
+  "LATEST WEIGHT": "187",
+  "png_filename": "COVID-19-AR-16406502_XR_CHEST_AP_PORTABLE_5.png",
+  "exam_Id": "Exam-4",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504310"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434452",
+  "AGE": "40",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "30.67",
+  "LATEST WEIGHT": "190",
+  "png_filename": "COVID-19-AR-16406502_XR_CHEST_AP_PORTABLE_5.png",
+  "exam_Id": "Exam-6",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504311"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424075",
+  "AGE": "29",
+  "SEX": "F",
+  "ZIP": "718",
+  "LATEST_BMI": "31.09",
+  "LATEST WEIGHT": "170",
+  "png_filename": "COVID-19-AR-16406494_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504312"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424081",
+  "AGE": "37",
+  "SEX": "F",
+  "ZIP": "720",
+  "LATEST_BMI": "56.46",
+  "LATEST WEIGHT": "308",
+  "png_filename": "COVID-19-AR-16406494_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504313"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434347",
+  "AGE": "60",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "39.48",
+  "LATEST WEIGHT": "230",
+  "png_filename": "COVID-19-AR-16424105_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504314"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406488",
+  "AGE": "67",
+  "SEX": "M",
+  "ZIP": "720",
+  "LATEST_BMI": "19",
+  "LATEST WEIGHT": "121",
+  "png_filename": "COVID-19-AR-16424105_XR_CHEST_PA_AND_LATERAL_4.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504315"
+  },
+  "PATIENT_ID": "COVID-19-AR-16445151",
+  "AGE": "51",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "33.61",
+  "LATEST WEIGHT": "241",
+  "png_filename": "COVID-19-AR-16424105_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504316"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424115",
+  "AGE": "81",
+  "SEX": "F",
+  "ZIP": "720",
+  "LATEST_BMI": "29.8",
+  "LATEST WEIGHT": "194",
+  "png_filename": "COVID-19-AR-16439195_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "2",
+  "MORTALITY": "TRUE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504317"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406490",
+  "AGE": "38",
+  "SEX": "F",
+  "ZIP": "720",
+  "LATEST_BMI": "29.3",
+  "LATEST WEIGHT": "160",
+  "png_filename": "COVID-19-AR-16445144_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504318"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406545",
+  "AGE": "61",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "22.17",
+  "LATEST WEIGHT": "145",
+  "png_filename": "COVID-19-AR-16424071_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504319"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406561",
+  "AGE": "72",
+  "SEX": "F",
+  "ZIP": "720",
+  "LATEST_BMI": "28.19",
+  "LATEST WEIGHT": "190",
+  "png_filename": "COVID-19-AR-16439186_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "TRUE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50431a"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424116",
+  "AGE": "87",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "33.4",
+  "LATEST WEIGHT": "220",
+  "png_filename": "COVID-19-AR-16406521_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50431b"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434366",
+  "AGE": "81",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "28.9",
+  "LATEST WEIGHT": "135",
+  "png_filename": "COVID-19-AR-16406521_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50431c"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434369",
+  "AGE": "61",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "42.8",
+  "LATEST WEIGHT": "324",
+  "png_filename": "COVID-19-AR-16406505_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50431d"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406489",
+  "AGE": "37",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "31.6",
+  "LATEST WEIGHT": "220",
+  "png_filename": "COVID-19-AR-16406505_XR_CHEST_AP_ONLY_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50431e"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424093",
+  "AGE": "28",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "37.44",
+  "LATEST WEIGHT": "225",
+  "png_filename": "COVID-19-AR-16406526_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50431f"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434358",
+  "AGE": "76",
+  "SEX": "F",
+  "ZIP": "720",
+  "LATEST_BMI": "34.9",
+  "LATEST WEIGHT": "273",
+  "png_filename": "COVID-19-AR-16406526_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "TRUE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504320"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406498",
+  "AGE": "59",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "23.2",
+  "LATEST WEIGHT": "127",
+  "png_filename": "COVID-19-AR-16434452_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504321"
+  },
+  "PATIENT_ID": "COVID-19-AR-16407173",
+  "AGE": "88",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "43",
+  "LATEST WEIGHT": "219",
+  "png_filename": "COVID-19-AR-16434452_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504322"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434380",
+  "AGE": "70",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "22.76",
+  "LATEST WEIGHT": "177",
+  "png_filename": "COVID-19-AR-16424075_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504323"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406503",
+  "AGE": "56",
+  "SEX": "M",
+  "ZIP": "720",
+  "LATEST_BMI": "32.49",
+  "LATEST WEIGHT": "220",
+  "png_filename": "COVID-19-AR-16424075_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504324"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424083",
+  "AGE": "49",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "33.5",
+  "LATEST WEIGHT": "227",
+  "png_filename": "COVID-19-AR-16424081_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504325"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406542",
+  "AGE": "55",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "34.4",
+  "LATEST WEIGHT": "232",
+  "png_filename": "COVID-19-AR-16424081_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504326"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434378",
+  "AGE": "64",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "31.3",
+  "LATEST WEIGHT": "173",
+  "png_filename": "COVID-19-AR-16434347_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504327"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424129",
+  "AGE": "36",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "37.8",
+  "LATEST WEIGHT": "271",
+  "png_filename": "COVID-19-AR-16406488_XR_CHEST_PA_AND_LATERAL_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504328"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424103",
+  "AGE": "57",
+  "SEX": "F",
+  "ZIP": "720",
+  "LATEST_BMI": "41.63",
+  "LATEST WEIGHT": "257",
+  "png_filename": "COVID-19-AR-16406488_XR_CHEST_AP_ONLY_3.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504329"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424079",
+  "AGE": "44",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "27.12",
+  "LATEST WEIGHT": "200",
+  "png_filename": "COVID-19-AR-16406488_XR_CHEST_AP_ONLY_3.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50432a"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434361",
+  "AGE": "73",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "57.6",
+  "LATEST WEIGHT": "364",
+  "png_filename": "COVID-19-AR-16445151_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50432b"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434411",
+  "AGE": "57",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "22.7",
+  "LATEST WEIGHT": "149",
+  "png_filename": "COVID-19-AR-16445151_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50432c"
+  },
+  "PATIENT_ID": "COVID-19-AR-16439183",
+  "AGE": "35",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "39.7",
+  "LATEST WEIGHT": "238",
+  "png_filename": "COVID-19-AR-16424115_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50432d"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406522",
+  "AGE": "63",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "30.9",
+  "LATEST WEIGHT": "235",
+  "png_filename": "COVID-19-AR-16424115_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50432e"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406559",
+  "AGE": "61",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "35.8",
+  "LATEST WEIGHT": "228",
+  "png_filename": "COVID-19-AR-16406490_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50432f"
+  },
+  "PATIENT_ID": "COVID-19-AR-16439192",
+  "AGE": "64",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "27.44",
+  "LATEST WEIGHT": "185",
+  "png_filename": "COVID-19-AR-16406545_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "4",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504330"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406500",
+  "AGE": "48",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "23.3",
+  "LATEST WEIGHT": "140",
+  "png_filename": "COVID-19-AR-16406561_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504331"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424106",
+  "AGE": "22",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "52.5",
+  "LATEST WEIGHT": "287",
+  "png_filename": "COVID-19-AR-16406561_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504332"
+  },
+  "PATIENT_ID": "COVID-19-AR-16445138",
+  "AGE": "48",
+  "SEX": "M",
+  "ZIP": "723",
+  "LATEST_BMI": "43.9",
+  "LATEST WEIGHT": "332",
+  "png_filename": "COVID-19-AR-16424116_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504333"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434371",
+  "AGE": "69",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "36",
+  "LATEST WEIGHT": "239",
+  "png_filename": "COVID-19-AR-16424116_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504334"
+  },
+  "PATIENT_ID": "COVID-19-AR-16445168",
+  "AGE": "74",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "21.11",
+  "LATEST WEIGHT": "147",
+  "png_filename": "COVID-19-AR-16424116_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504335"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406517",
+  "AGE": "59",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "33.73",
+  "LATEST WEIGHT": "185",
+  "png_filename": "COVID-19-AR-16434366_XR_CHEST_PA_ONLY_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504336"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406524",
+  "AGE": "50",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "41.51",
+  "LATEST WEIGHT": "273",
+  "png_filename": "COVID-19-AR-16434369_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504337"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434368",
+  "AGE": "87",
+  "SEX": "M",
+  "ZIP": "720",
+  "LATEST_BMI": "22.32",
+  "LATEST WEIGHT": "160",
+  "png_filename": "COVID-19-AR-16434369_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504338"
+  },
+  "PATIENT_ID": "COVID-19-AR-16439191",
+  "AGE": "26",
+  "SEX": "M",
+  "ZIP": "720",
+  "LATEST_BMI": "22.47",
+  "LATEST WEIGHT": "175",
+  "png_filename": "COVID-19-AR-16406489_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504339"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424070",
+  "AGE": "54",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "23.27",
+  "LATEST WEIGHT": "176",
+  "png_filename": "COVID-19-AR-16424093_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "TRUE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50433a"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424095",
+  "AGE": "60",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "22.2",
+  "LATEST WEIGHT": "155",
+  "png_filename": "COVID-19-AR-16434358_XR_CHEST_AP_PORTABLE_4.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50433b"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424104",
+  "AGE": "34",
+  "SEX": "F",
+  "ZIP": "720",
+  "LATEST_BMI": "31.3",
+  "LATEST WEIGHT": "200",
+  "png_filename": "COVID-19-AR-16434358_XR_CHEST_AP_PORTABLE_4.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50433c"
+  },
+  "PATIENT_ID": "COVID-19-AR-16439188",
+  "AGE": "73",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "31.62",
+  "LATEST WEIGHT": "190",
+  "png_filename": "COVID-19-AR-16434358_XR_CHEST_AP_PORTABLE_4.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50433d"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434356",
+  "AGE": "23",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "41.15",
+  "LATEST WEIGHT": "225",
+  "png_filename": "COVID-19-AR-16434358_XR_CHEST_AP_PORTABLE_4.png",
+  "exam_Id": "Exam-4",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50433e"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406508",
+  "AGE": "64",
+  "SEX": "F",
+  "ZIP": "712",
+  "LATEST_BMI": "35.6",
+  "LATEST WEIGHT": "228",
+  "png_filename": "COVID-19-AR-16406498_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "2",
+  "MORTALITY": "TRUE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50433f"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434344",
+  "AGE": "59",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "64.9",
+  "LATEST WEIGHT": "392",
+  "png_filename": "COVID-19-AR-16406498_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504340"
+  },
+  "PATIENT_ID": "COVID-19-AR-16445167",
+  "AGE": "47",
+  "SEX": "F",
+  "ZIP": "729",
+  "LATEST_BMI": "21.8",
+  "LATEST WEIGHT": "135",
+  "png_filename": "COVID-19-AR-16406498_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504341"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434346",
+  "AGE": "19",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "23",
+  "LATEST WEIGHT": "165",
+  "png_filename": "COVID-19-AR-16407173_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504342"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434363",
+  "AGE": "25",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "34.6",
+  "LATEST WEIGHT": "221",
+  "png_filename": "COVID-19-AR-16407173_XR_CHEST_AP_ONLY_3.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504343"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424113",
+  "AGE": "65",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "34.78",
+  "LATEST WEIGHT": "178",
+  "png_filename": "COVID-19-AR-16407173_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504344"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424077",
+  "AGE": "29",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "21.11",
+  "LATEST WEIGHT": "123",
+  "png_filename": "COVID-19-AR-16434380_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504345"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434391",
+  "AGE": "60",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "38.07",
+  "LATEST WEIGHT": "228",
+  "png_filename": "COVID-19-AR-16406503_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504346"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424118",
+  "AGE": "81",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "39.1",
+  "LATEST WEIGHT": "247",
+  "png_filename": "COVID-19-AR-16424083_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504347"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406531",
+  "AGE": "57",
+  "SEX": "F",
+  "ZIP": "716",
+  "LATEST_BMI": "38.4",
+  "LATEST WEIGHT": "243",
+  "png_filename": "COVID-19-AR-16406542_XR_CHEST_AP_PORTABLE_6.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "TRUE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504348"
+  },
+  "PATIENT_ID": "COVID-19-AR-16445143",
+  "AGE": "91",
+  "SEX": "F",
+  "ZIP": "720",
+  "LATEST_BMI": "26.2",
+  "LATEST WEIGHT": "145",
+  "png_filename": "COVID-19-AR-16406542_XR_CHEST_AP_PORTABLE_6.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504349"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406533",
+  "AGE": "58",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "33.04",
+  "LATEST WEIGHT": "192",
+  "png_filename": "COVID-19-AR-16406542_XR_CHEST_AP_PORTABLE_6.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50434a"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424072",
+  "AGE": "38",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "34.2",
+  "LATEST WEIGHT": "231",
+  "png_filename": "COVID-19-AR-16406542_XR_CHEST_AP_PORTABLE_6.png",
+  "exam_Id": "Exam-4",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50434b"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406512",
+  "AGE": "49",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "26.6",
+  "LATEST WEIGHT": "164",
+  "png_filename": "COVID-19-AR-16406542_XR_CHEST_AP_PORTABLE_6.png",
+  "exam_Id": "Exam-5",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50434c"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434444",
+  "AGE": "66",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "24.9",
+  "LATEST WEIGHT": "160",
+  "png_filename": "COVID-19-AR-16406542_XR_CHEST_AP_PORTABLE_6.png",
+  "exam_Id": "Exam-6",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50434d"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434370",
+  "AGE": "79",
+  "SEX": "M",
+  "ZIP": "720",
+  "LATEST_BMI": "26.1",
+  "LATEST WEIGHT": "192",
+  "png_filename": "COVID-19-AR-16434378_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50434e"
+  },
+  "PATIENT_ID": "COVID-19-AR-16407183",
+  "AGE": "89",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "28.31",
+  "LATEST WEIGHT": "197",
+  "png_filename": "COVID-19-AR-16424129_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50434f"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434395",
+  "AGE": "60",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "30.28",
+  "LATEST WEIGHT": "205",
+  "png_filename": "COVID-19-AR-16424129_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "TRUE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504350"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424076",
+  "AGE": "59",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "21.3",
+  "LATEST WEIGHT": "132",
+  "png_filename": "COVID-19-AR-16424129_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "3",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504351"
+  },
+  "PATIENT_ID": "COVID-19-AR-16439194",
+  "AGE": "37",
+  "SEX": "F",
+  "ZIP": "718",
+  "LATEST_BMI": "39.5",
+  "LATEST WEIGHT": "185",
+  "png_filename": "COVID-19-AR-16424103_XR_CHEST_AP_PORTABLE_5.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504352"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424120",
+  "AGE": "81",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "19.4",
+  "LATEST WEIGHT": "120",
+  "png_filename": "COVID-19-AR-16424103_XR_CHEST_AP_PORTABLE_5.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504353"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406492",
+  "AGE": "26",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "27.41",
+  "LATEST WEIGHT": "175",
+  "png_filename": "COVID-19-AR-16424103_XR_CHEST_AP_PORTABLE_5.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504354"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406579",
+  "AGE": "25",
+  "SEX": "M",
+  "ZIP": "720",
+  "LATEST_BMI": "52.5",
+  "LATEST WEIGHT": "409",
+  "png_filename": "COVID-19-AR-16424103_XR_CHEST_AP_PORTABLE_5.png",
+  "exam_Id": "Exam-4",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "TRUE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504355"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434349",
+  "AGE": "30",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "34.58",
+  "LATEST WEIGHT": "255",
+  "png_filename": "COVID-19-AR-16424079_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504356"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434396",
+  "AGE": "37",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "25.8",
+  "LATEST WEIGHT": "190",
+  "png_filename": "COVID-19-AR-16424079_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504357"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406541",
+  "AGE": "29",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "52.8",
+  "LATEST WEIGHT": "327",
+  "png_filename": "COVID-19-AR-16434361_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504358"
+  },
+  "PATIENT_ID": "COVID-19-AR-16407176",
+  "AGE": "31",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "33.5",
+  "LATEST WEIGHT": "240",
+  "png_filename": "COVID-19-AR-16434361_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504359"
+  },
+  "PATIENT_ID": "COVID-19-AR-16406529",
+  "AGE": "79",
+  "SEX": "M",
+  "ZIP": "721",
+  "LATEST_BMI": "27.8",
+  "LATEST WEIGHT": "209",
+  "png_filename": "COVID-19-AR-16434361_XR_CHEST_AP_PORTABLE_3.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "TRUE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50435a"
+  },
+  "PATIENT_ID": "COVID-19-AR-16407177",
+  "AGE": "55",
+  "SEX": "M",
+  "ZIP": "725",
+  "LATEST_BMI": "NULL",
+  "LATEST WEIGHT": "NULL",
+  "png_filename": "COVID-19-AR-16434411_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50435b"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424074",
+  "AGE": "55",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "26.78",
+  "LATEST WEIGHT": "192",
+  "png_filename": "COVID-19-AR-16439183_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50435c"
+  },
+  "PATIENT_ID": "COVID-19-AR-16407187",
+  "AGE": "48",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "31.3",
+  "LATEST WEIGHT": "205",
+  "png_filename": "COVID-19-AR-16406522_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50435d"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424108",
+  "AGE": "47",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "48.4",
+  "LATEST WEIGHT": "408",
+  "png_filename": "COVID-19-AR-16406522_XR_CHEST_AP_PORTABLE_2.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50435e"
+  },
+  "PATIENT_ID": "COVID-19-AR-16424111",
+  "AGE": "64",
+  "SEX": "M",
+  "ZIP": "719",
+  "LATEST_BMI": "23.71",
+  "LATEST WEIGHT": "170",
+  "png_filename": "COVID-19-AR-16406559_XR_CHEST_AP_PORTABLE_1.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf50435f"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434399",
+  "AGE": "71",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "28.3",
+  "LATEST WEIGHT": "186",
+  "png_filename": "COVID-19-AR-16406559_XR_CHEST_PA_AND_LATERAL_3.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "TRUE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504360"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434453",
+  "AGE": "47",
+  "SEX": "M",
+  "ZIP": "724",
+  "LATEST_BMI": "39.16",
+  "LATEST WEIGHT": "305",
+  "png_filename": "COVID-19-AR-16439192_XR_CHEST_AP_PORTABLE_9.png",
+  "exam_Id": "Exam-1",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504361"
+  },
+  "PATIENT_ID": "COVID-19-AR-16434383",
+  "AGE": "57",
+  "SEX": "M",
+  "ZIP": "722",
+  "LATEST_BMI": "29.2",
+  "LATEST WEIGHT": "171",
+  "png_filename": "COVID-19-AR-16439192_XR_CHEST_AP_PORTABLE_9.png",
+  "exam_Id": "Exam-2",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504362"
+  },
+  "PATIENT_ID": "COVID-19-AR-16439200",
+  "AGE": "41",
+  "SEX": "M",
+  "ZIP": "716",
+  "LATEST_BMI": "29.1",
+  "LATEST WEIGHT": "208",
+  "png_filename": "COVID-19-AR-16439192_XR_CHEST_AP_PORTABLE_9.png",
+  "exam_Id": "Exam-3",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504363"
+  },
+  "PATIENT_ID": "COVID-19-AR-16439190",
+  "AGE": "39",
+  "SEX": "F",
+  "ZIP": "728",
+  "LATEST_BMI": "34.54",
+  "LATEST WEIGHT": "195",
+  "png_filename": "COVID-19-AR-16439192_XR_CHEST_AP_PORTABLE_9.png",
+  "exam_Id": "Exam-4",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504364"
+  },
+  "PATIENT_ID": "COVID-19-AR-16445122",
+  "AGE": "29",
+  "SEX": "F",
+  "ZIP": "721",
+  "LATEST_BMI": "32.9",
+  "LATEST WEIGHT": "219",
+  "png_filename": "COVID-19-AR-16439192_XR_CHEST_AP_PORTABLE_9.png",
+  "exam_Id": "Exam-5",
+  "ICU Admit": "TRUE",
+  "# ICU admits": "1",
+  "MORTALITY": "FALSE"
+},{
+  "_id": {
+    "$oid": "63f7da62a90e5e4edf504365"
+  },
+  "PATIENT_ID": "COVID-19-AR-16445149",
+  "AGE": "41",
+  "SEX": "F",
+  "ZIP": "722",
+  "LATEST_BMI": "40.2",
+  "LATEST WEIGHT": "229",
+  "png_filename": "COVID-19-AR-16439192_XR_CHEST_AP_PORTABLE_9.png",
+  "exam_Id": "Exam-6",
+  "ICU Admit": "FALSE",
+  "# ICU admits": "0",
+  "MORTALITY": "FALSE"
+}]

@@ -8,8 +8,6 @@ var logger = require('morgan');
 var cors = require('cors');
 var mongoose = require('mongoose');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var examsRouter = require('./routes/exams');
 
 //creats express app
@@ -33,9 +31,9 @@ mongoose.connect(process.env.MONG_URI)
 .then(() => {
   console.log('connected to database')
   //listen  to port
-//   app.listen(process.env.PORT, () =>{
-//     console.log('listening for request on port', process.env.PORT)
-//   })
+  // app.listen(process.env.PORT, () =>{
+  //   console.log('listening for request on port', process.env.PORT)
+  // })
 })
 .catch((error) =>{
   console.log(error)
