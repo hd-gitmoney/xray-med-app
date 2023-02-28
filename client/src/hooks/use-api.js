@@ -7,8 +7,8 @@ export function useApi({ path } = { path: '' }) {
 
   const fetchExams = () => {
     fetch(`${API_ROOT}/${path}`)
-    .then((examObj) => {
-      return examObj.json()
+    .then((response) => {
+      return response.json()
     })
     .then((examObj) => {
       setExams(examObj)
