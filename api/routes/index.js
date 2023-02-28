@@ -1,4 +1,6 @@
 const express = require('express');
+const { createExam, getExam, getExams, updateExam, deleteExam } =  require('../controllers/exams');
+
 const router = express.Router();
 
 // const app = express()

@@ -1,8 +1,8 @@
-import React, { Component, useEffect, useState} from 'react';
+import React, { Component, useState, useEffect, useEffect, useState} from 'react';
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 import Placeholder from 'react-bootstrap/Placeholder';
-import Examitem from './ExamItem';
+//import Examitem from './ExamItem';
 
 // const API_ROOT = 'https://czi-covid-1-hjgxknco3a-uc.a.run.app/api/exams';
 
@@ -21,6 +21,7 @@ import Examitem from './ExamItem';
 // }
 
 
+import { response } from 'express';
 //TODO
 
 //https://react-bootstrap.github.io/components/placeholder/

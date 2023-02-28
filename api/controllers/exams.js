@@ -1,15 +1,15 @@
-import express from 'express';
-import mongoose from 'mongoose';
+const express = require('express');
+const mongoose = require('mongoose');
 
-import PostMessage from '../models/postExam';
+const PostMessage = require('../models/postExam');
 
 const router = express.Router();
 
-export const getExams = async (req, res) => {
+const getExams = async (req, res) => {
 
 }
 
-export const getExam = async (req, res) => {
+const getExam = async (req, res) => {
     const { id } = req.params;
 
     try{
@@ -35,7 +35,7 @@ export const createExam = async (req, res) => {
     }
 }
 
-export const updateExam = async (req, res) => {
+const updateExam = async (req, res) => {
     const { id } = req.params;
     const { age, sex, zip, latest_bmi, latest_weight, icu_admit, num_icu_admits, mortality, notes } = req.body;
 
@@ -48,7 +48,7 @@ export const updateExam = async (req, res) => {
     res.json(updatedPost);
 }
 
-export const deleteExam = async (req, res) => {
+const deleteExam = async (req, res) => {
     const { id } = req.params;
 
     if(!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No exam with id: ${id}`);
@@ -58,4 +58,11 @@ export const deleteExam = async (req, res) => {
     res.json({ message: 'Exam deleted succesfully'});
 }
 
-export default router;
+module.exports = {
+    getExams,
+    getExam,
+    createExam,
+    deleteExam,
+    updateExam
+}
+//export default router;
