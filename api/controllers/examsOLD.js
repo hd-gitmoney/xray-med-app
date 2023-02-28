@@ -37,11 +37,11 @@ export const createExam = async (req, res) => {
 
 const updateExam = async (req, res) => {
     const { id } = req.params;
-    const { age, sex, zip, latest_bmi, latest_weight, icu_admit, num_icu_admits, mortality, notes } = req.body;
+    const { PATIENT_ID, SEX, AGE, ZIP, LATEST_BMI,LATESTWEIGHT, png_filename, exam_Id, ICU_Admit, NUM_ICU_admits, MORTALITY } = req.body;
 
     if(!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No exam with id: ${id}`);
 
-    const updatedExam = { age, sex, zip, latest_bmi, latest_weight, icu_admit, num_icu_admits, mortality, notes, _id: id };
+    const updatedExam = { PATIENT_ID, SEX, AGE, ZIP, LATEST_BMI,LATESTWEIGHT, png_filename, exam_Id, ICU_Admit, NUM_ICU_admits, MORTALITY, notes, _id: id };
 
     await PostMessage.findByIdAndUpdate(id, updatedExam, {new: true });
 
