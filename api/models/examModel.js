@@ -3,48 +3,48 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const examSchema = new Schema({
-    patientId: {
+    PATIENT_ID: {
         type: String,
         required: true,
         ref: 'Patient'
     },
-    age: {
+    AGE: {
         type: Number,
         required: true
     },
-    sex: {
+    SEX: {
         type: String,
         require: true
     },
-    zip: {
-        type: String,
-        require: true
-    },
-    latestBmi: {
+    ZIP: {
         type: Number,
         require: true
     },
-    latestWeight: {
+    LATEST_BMI: {
         type: Number,
         require: true
     },
-    pngFilename: {
+    LATESTWEIGHT: {
+        type: Number,
+        require: true
+    },
+    png_Filename: {
         type: String,
         require: true
     },
-    examId: {
+    exam_Id: {
         type: String,
         require: true
     },
-    icuAdmit: {
+    ICU_Admit: {
         type: Boolean,
         require: true
     },
-    numIcuAdmit: {
+    NUM_ICU_admit: {
         type: Number,
         require: true
     },
-    mortality: {
+    MORTALITY: {
         type: Boolean,
         require: true
     }
