@@ -15,7 +15,7 @@ function App() {
           <NavBar />
             <Routes>
               <Route exact path="/" element={<Home exams={exams} />} />
-              <Route path="/admin" element={<Admin />} />
+              <Route path="/admin" element={<Admin exams={exams} />} />
               <Route path="/examdetails" element={<ExamDetails />} /> 
               {/* TODO */}
               {/* replace path for exam details with examID */}

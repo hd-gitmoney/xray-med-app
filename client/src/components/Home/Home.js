@@ -26,8 +26,8 @@ const Home = ({exams}) => {
                 </tr>
             </thead>
             <tbody>
-            {exams.map((exam, index) => {
-                    return <tr key={index}>
+            {exams.map((exam) => {
+                    return <tr key={exam._id}>
                         <td><Link>{exam.PATIENT_ID}</Link></td>
                         <td>{exam.AGE}</td>
                         <td>{exam.SEX}</td>
