@@ -28,7 +28,7 @@ const examSchema = new Schema({
         type: Number,
         require: true
     },
-    png_Filename: {
+    png_filename: {
         type: String,
         require: true
     },
@@ -37,15 +37,15 @@ const examSchema = new Schema({
         require: true
     },
     ICU_Admit: {
-        type: Boolean,
+        type: String,
         require: true
     },
-    NUM_ICU_admit: {
+    NUM_ICU_admits: {
         type: Number,
         require: true
     },
     MORTALITY: {
-        type: Boolean,
+        type: String,
         require: true
     }
 })
