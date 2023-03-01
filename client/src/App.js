@@ -17,7 +17,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home exams={exams} />} />
               <Route path="/admin" element={<Admin exams={exams} />} />
-              <Route path="/examdetails" element={<ExamDetails />} /> 
+              <Route path="/examdetails/:id" element={<ExamDetails />} /> 
               {/* TODO */}
               {/* replace path for exam details with examID */}
               <Route path="/newx-ray" element={<XrayForm/>} />
