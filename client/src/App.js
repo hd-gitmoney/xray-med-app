@@ -9,15 +9,7 @@ import { useApi } from './hooks/use-api';
 
 function App() {
   const { response } = useApi();
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-
-=======
-  // {console.log(response)}
->>>>>>> Stashed changes
-=======
-  {console.log(response)}
->>>>>>> 34bd2545b5c44958e3853bbb5c6a48c44e577068
+  
   return (
     <div className="App">
       <header className="App-header">

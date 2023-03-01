@@ -3,7 +3,7 @@ import React from "react";
 export default function Examitem({exam})
 {
     return(
-    <tr>
+    <tr>{exam._id}
 
     <td>{exam.patiendId}</td>
     <td>{exam.age}</td>
