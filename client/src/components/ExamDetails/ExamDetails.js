@@ -38,6 +38,7 @@ const ExamDetails = () => {
                             <img src="https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/COVID-19-AR-16424082_XR_CHEST_AP_PORTABLE_2.png" alt="Chest X-Ray" />
                 </section>
             </div>
+            
         </>
         // <div>
         //     <h1>{xray.patientId}</h1>
@@ -53,3 +54,5 @@ const ExamDetails = () => {
 }
 
 export default ExamDetails;
+
+    
