@@ -1,0 +1,14 @@
+.tableButton{
+    width: 75px;
+    height: 30px;
+    background-color: rgba(25, 28, 21,1);
+    color: rgb(38, 151, 87);
+    border: 3px solid rgba(26, 117, 66,1);
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+.tableButton:hover {
+    background-color: rgba(26, 117, 66,1);
+    color: white;
+}

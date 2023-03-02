@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
+import './home.css'
 // import Placeholder from 'react-bootstrap/Placeholder';
 
 //TODO
