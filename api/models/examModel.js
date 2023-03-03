@@ -49,7 +49,7 @@ const examSchema = new Schema({
     }
 })
 
-//connecting to cluster named
+//connecting to cluster named exams
 
 const databaseName = "exams"
 const collectionName = "exams"
