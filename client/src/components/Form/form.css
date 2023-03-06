@@ -17,3 +17,12 @@
   background-color: green;
   border: 1px green solid;
 }
+
+.createForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.formError{
+  margin-top: 10px;
+}
