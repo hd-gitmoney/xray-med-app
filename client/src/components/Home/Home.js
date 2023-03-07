@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
+import { Container, Form, InputGroup } from "react-bootstrap";
+import React, { useState } from 'react';
 // import Placeholder from 'react-bootstrap/Placeholder';
 
 //TODO
@@ -9,7 +11,17 @@ import Table from 'react-bootstrap/Table';
 
 
 const Home = ({exams}) => {
-    return(
+    const [search, setSearch] = useState('')
+    return( 
+        
+                <div>
+                <InputGroup>
+                <Form.Control
+                
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder = 'search!'
+                />
+                </InputGroup>
                 <Table striped="columns" bordered hover>
                     <thead>
                         <tr>
@@ -27,7 +39,9 @@ const Home = ({exams}) => {
                         </tr>
                     </thead>
                     <tbody>
-                    {exams.map((exam) => {
+                    {exams.filter((exam) => {
+                        return search.toLowerCase() === '' ? exam : exam.AGE.toString().toLowerCase().includes(search)
+                    }).map((exam) => {
                             return <tr key={exam._id}>
                                 <td><Link to={`/examdetails/${exam._id}`}>{exam.PATIENT_ID}</Link></td>
                                 <td>{exam.AGE}</td>
@@ -44,6 +58,7 @@ const Home = ({exams}) => {
                         })}
                     </tbody>
                 </Table>
+            </div>
          );
     }
  
