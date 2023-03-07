@@ -2,6 +2,11 @@
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 import Placeholder from 'react-bootstrap/Placeholder';
+import { useExamContext } from "../../hooks/use-ExamContext";
+import { FETCH_ALL } from "../../constants/actionTypes";
+import React, {  useEffect, useState } from 'react';
+
+const API_ROOT = 'http://localhost:9000';
 
 //TODO
 
@@ -10,6 +15,34 @@ import Placeholder from 'react-bootstrap/Placeholder';
 
 
 const Home = ({exams}) => {
+    const {exam, dispatch } = useExamContext()
+
+
+
+  useEffect(() => {
+    const fetchExams = async () => {
+      const response = await fetch(`${API_ROOT}`)
+      const json = await response.json()
+  
+      if (response.ok) {
+        dispatch({type: FETCH_ALL, payload: json}) 
+      }   
+    }
+  
+
+  // //    const fetchExams = async () => {
+  //   const response = await fetch(`${API_ROOT}/${path}`)
+  //   const json = await response.json()
+
+  //   if(response.ok){
+  //     setExams(json)
+  //   }
+  // }
+
+ 
+    fetchExams()
+  }, [dispatch]);
+
     return(
         <Table striped="columns" bordered hover>
             <thead>
@@ -28,7 +61,7 @@ const Home = ({exams}) => {
                 </tr>
             </thead>
             <tbody>
-            {exams.map((exam) => {
+            {exams && exams.map((exam) => {
                     return <tr key={exam._id}>
                         <td><Link>{exam.PATIENT_ID}</Link></td>
                         <td>{exam.AGE}</td>

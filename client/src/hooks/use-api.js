@@ -1,19 +1,25 @@
-import { useState, useEffect } from 'react';
+import React, {  useEffect, useState } from 'react';
+import { useExamContext } from './use-ExamContext';
+import { FETCH_ALL, DELETE } from '../constants/actionTypes';
 
-const API_ROOT = 'http://localhost:9000';
+const API_ROOT = 'http://localhost:9000/';
 
-export function useApi({ path } = { path: '' }) {
-  const [exams, setExams] = useState([]);
+export const useApi = () => {
 
-  const fetchExams = () => {
-    fetch(`${API_ROOT}/${path}`)
-    .then((response) => {
-      return response.json()
-    })
-    .then((examObj) => {
-      setExams(examObj)
-    })
-  }
+  const {exam, dispatch } = useExamContext()
+
+
+
+  useEffect(() => {
+    const fetchExams = async () => {
+      const response = await fetch(`${API_ROOT}`)
+      const json = await response.json()
+  
+      if (response.ok) {
+        dispatch({type: FETCH_ALL, payload: json}) 
+      }   
+    }
+  
 
   // //    const fetchExams = async () => {
   //   const response = await fetch(`${API_ROOT}/${path}`)
@@ -24,12 +30,12 @@ export function useApi({ path } = { path: '' }) {
   //   }
   // }
 
-  useEffect(() => {
-    fetchExams();
-  }, []);
+ 
+    fetchExams()
+  }, [dispatch]);
 
   return {
-    exams
+     exam
   };
 }
 
@@ -37,4 +43,4 @@ export function useApi({ path } = { path: '' }) {
 //export const fetchXRay = (examID) => API_ROOT.get(`/examdetails/${examID}`)
 //export const createExam = (newExam) => API_ROOT.post('/', newExam);
 //export const updateExam = (examID, updateExam) => API_ROOT.patch(`/examdetails/${examID}`, updatePost); patch replaces some of the data, put replaces all the data
-//export const deleteExam = (examID) => API_ROOT.delete(`/examdetails/${examID}`);
+export const deleteExam = (examID) => API_ROOT.delete(`/examdetails/${examID}`);

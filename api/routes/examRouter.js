@@ -33,7 +33,7 @@ router.get('/:id', function(req, res){
 })
 
 //POST a new xray exam
-router.post('/', function(req,res){
+router.post('/', (req,res) => {
   res.json({mssg: 'POST a new exam'})
 })
 

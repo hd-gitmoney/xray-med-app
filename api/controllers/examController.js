@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 //get all exams
 const getExams = async (req, res) =>{
     //finds all the exams
-    const exams = await Exam.find()
+    const exams = await Exam.find({})
     //sends an okay message and an array of exams
     res.status(200).json(exams)
 }
