@@ -38,7 +38,30 @@ const Home = ({exams}) => {
   //     setExams(json)
   //   }
   // }
+  // Old Version, without context
+  // Const Home = () => {
+  //   const [exams, setExams] = useState([]);
 
+  //   // const fetchExams = () => {
+  //   //   fetch(`${API_ROOT}/${path}`)
+  //   //   .then((response) => {
+  //   //     return response.json()
+  //   //   })
+  //   //   .then((examObj) => {
+  //   //     setExams(examObj)
+  //   //   })
+  //   // }
+  //     const fetchExams = async () => {
+  //     const response = await fetch(`${API_ROOT}`)
+  //     const json = await response.json()
+  
+  //     if(response.ok){
+  //       setExams(json)
+  //     }
+  //   }
+  //   useEffect(() => {
+  //     fetchExams();
+  //   }, []);
  
     fetchExams()
   }, [dispatch]);

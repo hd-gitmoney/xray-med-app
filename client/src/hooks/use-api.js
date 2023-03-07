@@ -8,6 +8,8 @@ export const useApi = () => {
 
   const {exam, dispatch } = useExamContext()
 
+  // export function useApi() {
+  //   const [exams, setExams] = useState([]);
 
 
   useEffect(() => {
@@ -23,6 +25,26 @@ export const useApi = () => {
 
   // //    const fetchExams = async () => {
   //   const response = await fetch(`${API_ROOT}/${path}`)
+  //   const json = await response.json()
+
+  //   if(response.ok){
+  //     setExams(json)
+  //   }
+// export function useApi() {
+//   const [exams, setExams] = useState([]);
+
+  // const fetchExams = () => {
+  //   fetch(`${API_ROOT}/${path}`)
+  //   .then((response) => {
+  //     return response.json()
+  //   })
+  //   .then((examObj) => {
+  //     setExams(examObj)
+  //   })
+  // }
+
+  //   const fetchExams = async () => {
+  //   const response = await fetch(`${API_ROOT}`)
   //   const json = await response.json()
 
   //   if(response.ok){

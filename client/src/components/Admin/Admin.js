@@ -4,13 +4,34 @@ import Table from 'react-bootstrap/Table';
 import Placeholder from 'react-bootstrap/Placeholder';
 //TODO
 //https://react-bootstrap.github.io/components/placeholder/
+import { useState, useEffect } from 'react';
+
+const API_ROOT = 'http://localhost:9000';
 
 
+const Admin = () => {
+    const [exams, setExams] = useState([]);
 
-
-
-
-const Admin = ({exams}) => {
+    // const fetchExams = () => {
+    //   fetch(`${API_ROOT}/${path}`)
+    //   .then((response) => {
+    //     return response.json()
+    //   })
+    //   .then((examObj) => {
+    //     setExams(examObj)
+    //   })
+    // }
+      const fetchExams = async () => {
+      const response = await fetch(`${API_ROOT}`)
+      const json = await response.json()
+  
+      if(response.ok){
+        setExams(json)
+      }
+    }
+    useEffect(() => {
+      fetchExams();
+    }, []);
     // state = {  } 
     // render() { 
     return(
