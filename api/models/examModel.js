@@ -5,8 +5,7 @@ const Schema = mongoose.Schema
 const examSchema = new Schema({
     PATIENT_ID: {
         type: String,
-        required: true,
-        ref: 'Patient'
+        required: true
     },
     AGE: {
         type: Number,
@@ -14,39 +13,39 @@ const examSchema = new Schema({
     },
     SEX: {
         type: String,
-        require: true
+        required: true
     },
     ZIP: {
         type: Number,
-        require: true
+        required: true
     },
     LATEST_BMI: {
         type: Number,
-        require: true
+        required: true
     },
     LATESTWEIGHT: {
         type: Number,
-        require: true
+        required: true
     },
     png_filename: {
         type: String,
-        require: true
+        required: true
     },
     exam_Id: {
         type: String,
-        require: true
+        required: true
     },
     ICU_Admit: {
         type: String,
-        require: true
+        required: true
     },
     NUM_ICU_admits: {
         type: Number,
-        require: true
+        required: true
     },
     MORTALITY: {
         type: String,
-        require: true
+        required: true
     }
 })
 
