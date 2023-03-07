@@ -1,13 +1,3 @@
-
-.centerform {
-  margin: auto;
-  margin-top: 50px;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
-}
-
-.aligndivs{
-  float: left;
-  margin-left: 20px;
-}
+/* DO NOT USE THIS FILE.
+USE index.css FOR GENERAL CHANGES
+OTHERWISE EACH COMPONENT NOW HAS THEIR OWN CSS FILE IN THEIR OWN FOLDER */

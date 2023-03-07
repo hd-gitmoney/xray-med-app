@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
-import Placeholder from 'react-bootstrap/Placeholder';
+import './admin.css'
+// import Placeholder from 'react-bootstrap/Placeholder';
 //TODO
 //https://react-bootstrap.github.io/components/placeholder/
 
@@ -26,18 +26,16 @@ const Admin = ({exams}) => {
                 </tr>
             </thead>
             <tbody>
-                {exams.map((exam) => {
+            {exams.map((exam) => {
                     return <tr key={exam._id}>
-                        <td><Link>{exam.PATIENT_ID}</Link></td>
+                        <td><Link to={`/examdetails/${exam._id}`}>{exam.PATIENT_ID}</Link></td>
                         <td>{exam.AGE}</td>
                         <td>{exam.SEX}</td>
                         <td>{exam.ZIP}</td>
                         <td>{exam.LATEST_BMI}</td>
-                        {/* having trouble showing these but I think its a naming convention problem */}
                         <td>{exam.LATESTWEIGHT}</td>
-                        <td><img src={exam.png_filename}/></td>
+                        <td><img src={`https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/${exam.png_filename}`} className="xrayImages" alt="Chest X-Ray"/></td>
                         <td>{exam.exam_Id}</td>
-                        {/* having trouble showing these but I think its a naming convention problem */}
                         <td>{exam.ICU_Admit}</td> 
                         <td>{exam.NUM_ICU_admits}</td>
                         <td>{exam.MORTALITY}</td>
