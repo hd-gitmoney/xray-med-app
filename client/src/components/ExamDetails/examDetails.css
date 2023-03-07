@@ -1,0 +1,12 @@
+.examDetailsBody{
+    display: flex;
+}
+
+.examDetails{
+    justify-content: space-around;
+    width: 45vw;
+}
+
+.titleDiv{
+    width: 300px;
+}

@@ -13,43 +13,44 @@ const examSchema = new Schema({
     },
     SEX: {
         type: String,
-        require: true
+        required: true
     },
     ZIP: {
         type: Number,
-        require: true
+        required: true
     },
     LATEST_BMI: {
         type: Number,
-        require: true
+        required: true
     },
     LATESTWEIGHT: {
         type: Number,
-        require: true
+        required: true
     },
     png_filename: {
         type: String,
-        require: true
+        required: true
     },
     exam_Id: {
         type: String,
-        require: true
+        required: true
     },
     ICU_Admit: {
         type: String,
-        require: true
+        required: true
     },
     NUM_ICU_admits: {
         type: Number,
-        require: true
+        required: true
     },
     MORTALITY: {
         type: String,
-        require: true
+        required: true
     }
 })
 
-//connecting to cluster named exams
+
+//connecting to cluster named
 
 const databaseName = "exams"
 const collectionName = "exams"
