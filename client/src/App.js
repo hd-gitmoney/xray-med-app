@@ -1,5 +1,5 @@
-import NavBar from './components/Navbar/Navbar.js';
 import { Routes, Route} from 'react-router-dom'
+import NavBar from './components/NavBar/Navbar.js';
 import Home from './components/Home/Home';
 import Admin from './components/Admin/Admin.js';
 import XrayForm from './components/xrayForm';
