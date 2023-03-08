@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 import { Container, Form, InputGroup } from "react-bootstrap";
-import React, { useState } from 'react';
 // import Placeholder from 'react-bootstrap/Placeholder';
 import { useExamContext } from "../../hooks/use-ExamContext";
 import { FETCH_ALL } from "../../constants/actionTypes";

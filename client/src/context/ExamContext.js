@@ -11,10 +11,8 @@ export const examReducer = (state, action) => {
             }
         case DELETE:
             return {
-                exams  : action.payload
+                exams  : state.exams.filter((e)=> e._id !== action.payload._id)
             }
-
-
         default:
             return state
     }

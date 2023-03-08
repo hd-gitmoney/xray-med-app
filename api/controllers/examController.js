@@ -70,7 +70,7 @@ const updateExam = async (req, res) => {
         return res.status(404).json({error: 'No such exam'})
     }
         
-    const exam = await exam.findOneAndUPdate({_id: id}, {
+    const exam = await Exam.findOneAndUpdate({_id: id}, {
         ...req.body
     })
 

@@ -19,7 +19,7 @@ router.get('/:id', getExam)
 router.post('/', createExam)
 
 //Delete a exam
-router.get('/:id', deleteExam)
+router.delete('/:id', deleteExam)
 
 //UPDATE a exam
 router.get('/:id', updateExam)
