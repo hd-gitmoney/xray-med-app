@@ -36,7 +36,7 @@ const createExam = async (req,res) => {
     try{
         //creating a new exam
         const exam = await Exam.create({ PATIENT_ID, AGE, SEX, ZIP, LATEST_BMI,LATESTWEIGHT, png_filename, exam_Id, ICU_Admit, NUM_ICU_admits, MORTALITY })
-        res.status(200).join(exam)
+        res.status(200).json(exam)
     } catch (error) {
         res.status(400).json({error: error.message})
     }

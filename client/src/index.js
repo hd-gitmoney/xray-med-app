@@ -12,6 +12,7 @@ root.render(
     <ExamContextProvider>
     <BrowserRouter>
         <App />
+        <App />
     </BrowserRouter>
     </ExamContextProvider>
   </React.StrictMode>

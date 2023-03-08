@@ -1,6 +1,7 @@
 import React, { Component, useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
+import './admin.css'
 import Placeholder from 'react-bootstrap/Placeholder';
 import { useExamContext } from '../../hooks/use-ExamContext';
 import { DELETE,UPDATE, CREATE, FETCH_ALL, FETCH_EXAMDETAILS } from '../../constants/actionTypes';

@@ -37,7 +37,6 @@ function XrayForm() {
                 'Content-Type' : 'application/json'
             }
         })
-        
         const json = await response.json()
         console.log(json)
 
