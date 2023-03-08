@@ -1,10 +1,11 @@
-//import NavBar from './components/NavBar.js';
+import NavBar from './components/NavBar.js';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home.js';
 //import Admin from './pages/Admin.js';
 import XrayForm from './components/Form/xrayForm';
 import ExamDetails from './components/ExamDetails/ExamDetails.js';
 import { UpdateExam } from './pages/UpdateExam.js';
+import { useState } from 'react';
 
 //import { useApi } from './hooks/use-api';
 

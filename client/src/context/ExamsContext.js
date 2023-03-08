@@ -10,7 +10,7 @@ export const examsReducer = (state, action) => {
       }
     case 'CREATE_EXAM':
       return { 
-        exams: [action.payload, ...state.workouts] 
+        exams: [action.payload, ...state.exams] 
       }
     case 'DELETE_EXAM':
         return {
