@@ -60,11 +60,11 @@ Before contributing or adding a new feature, please make sure you have already i
 To submit any changes to the code please reach out to [Pamela](https://github.com/PamelaCaguana) 
 
 ## Authors
-Anaselyousfi(https://github.com/anaselyousfi)
-PamelaCaguana(https://github.com/PamelaCaguana)
-Nela94(https://github.com/nela94)
-Frostyx0(https://github.com/orgs/hd-gitmoney/people/Frostyx0)
-Onyekaoku(https://github.com/Onyekaoku)
+(https://github.com/anaselyousfi)
+(https://github.com/PamelaCaguana)
+(https://github.com/nela94)
+(https://github.com/orgs/hd-gitmoney/people/Frostyx0)
+(https://github.com/Onyekaoku)
 
 ## License
 [Hack.Diversity](https://www.hackdiversity.com/)
