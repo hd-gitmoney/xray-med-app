@@ -10,3 +10,8 @@
 .titleDiv{
     width: 300px;
 }
+
+.editButton{
+    width: 175px;
+    font-size: 20px;
+}

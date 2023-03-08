@@ -28,7 +28,7 @@ const HomeRows = ({ exam }) => {
           <td>{exam.ICU_Admit}</td> 
           <td>{exam.NUM_ICU_admits}</td>
           <td>{exam.MORTALITY}</td>
-          <td><button className="tableButton">UPDATE</button></td>
+          <td><Link to={`/edit/${exam._id}`}><button className="tableButton">UPDATE</button></Link></td>
           <td><button onClick={handleClick} className="tableButton">DELETE</button></td>
     </tr>
   )

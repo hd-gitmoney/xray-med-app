@@ -16,6 +16,19 @@ export const examsReducer = (state, action) => {
         return {
             exams: state.exams.filter(w => w._id !== action.payload._id)
         }
+    case 'UPDATE_EXAM':
+      const updatedExam = action.payload;
+      
+      const updatedExams = state.exams.map((exam) => {
+        if (exam.id === updatedExam.id) {
+          return updatedExam;
+        }
+        return exam;
+      }); 
+      return {
+          ...state,
+          exams: updatedExams,
+        };
     default:
       return state
   }

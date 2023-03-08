@@ -5,6 +5,7 @@ import Home from './pages/Home.js';
 //import Admin from './pages/Admin.js';
 import XrayForm from './components/Form/xrayForm';
 import ExamDetails from './components/ExamDetails/ExamDetails.js';
+import { UpdateExam } from './pages/UpdateExam.js';
 
 //import { useApi } from './hooks/use-api';
 
@@ -18,7 +19,8 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home />} />
               {/* <Route path="/admin" element={<Admin />} /> */}
-              <Route path="/examdetails/:id" element={<ExamDetails />} /> 
+              <Route path="/examdetails/:id" element={<ExamDetails />} />
+              <Route path="/edit/:id" element={<UpdateExam />} />
               {/* TODO */}
               {/* replace path for exam details with examID */}
               <Route path="/newx-ray" element={<XrayForm/>} />

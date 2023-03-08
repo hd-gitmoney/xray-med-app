@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import './examDetails.css'
 
 const ExamDetails = () => {
@@ -22,6 +22,7 @@ const ExamDetails = () => {
         <>  
             <div className="titleDiv">
                 <h1>Exam Details</h1>
+                <Link to={`/edit/${params.id}`}><button className="editButton">Edit Employee</button></Link>
             </div>
             <div className="examDetailsBody">
                 <section className="patientInfo examDetails">
@@ -49,23 +50,12 @@ const ExamDetails = () => {
                     <h2>Exam Info</h2>
                         <h3>Exam ID:</h3>
                             <p>{exam.exam_Id}</p>
-                        <h3>Notes:</h3>
-                            <p>Bilateral patchy airspace disease involving both mid and lower lung zones, left worse than the right.</p>
                         <h3>Image:</h3>
                             <img src={`https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/${exam.png_filename}`} alt="Chest X-Ray"  />
                 </section>
             </div>
         </>
-        // <div>
-        //     <h1>{xray.patientId}</h1>
-        //     <h1>{xray.examId}</h1>
-        //     <h1>{xray.keyFindings}</h1>
-        //     <h1>{xray.brixiaScore}</h1>
-        //     <h1>{xray.age}</h1>
-        //     <h1>{xray.sex}</h1>
-        //     <h1>{xray.bmi}</h1>
-        //     <h1>{xray.zipCode}</h1>
-        // </div>
+
     ); 
 }
 
