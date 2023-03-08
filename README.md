@@ -1,4 +1,4 @@
-# Hack.Diversity Tech Dive Template
+# Hack.Diversity Git Money Tech Dive Project
 
 ## Getting Started
 
@@ -28,6 +28,8 @@ npm start
 
 You should then be able to visit `localhost:9000` in your browser and see the server running.
 
+![Xrayapp](https://user-images.githubusercontent.com/111167211/223786966-80fa35d2-7ce9-4f15-b27b-3de130b2446d.png)
+ 
 # Things to add
 - Create a `.env` file in the api folder and add the following as `key=value` 
   - PORT= `can be any port example: 3000`
