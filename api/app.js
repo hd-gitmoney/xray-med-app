@@ -29,33 +29,33 @@ app.use('/', examsRouter);
 mongoose.set("strictQuery", false);
 mongoose.connect(process.env.MONG_URI)
 .then(() => {
-  console.log('connected to database')
-  //listen  to port
-  // app.listen(process.env.PORT, () =>{
-  //   console.log('listening for request on port', process.env.PORT)
-  // })
+  //listen to port for requests
+  app.listen(process.env.PORT, () =>{
+    console.log('connected to DB & listening on port', process.env.PORT)
+  })
 })
 .catch((error) =>{
   console.log(error)
 });
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+app.use((req, res, next) => {
+  console.log(req.path, req.method)
+  next();
 });
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+// // error handler
+// app.use(function(err, req, res, next) {
+//   // set locals, only providing error in development
+//   res.locals.message = err.message;
+//   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
+//   // render the error page
+//   res.status(err.status || 500);
+//   res.render('error');
+// });
 
-module.exports = app;
+//module.exports = app;
 
 //install nodemon
 //"dev": "nodemon app.js"

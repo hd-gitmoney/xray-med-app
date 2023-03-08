@@ -6,8 +6,18 @@ import './admin.css'
 //https://react-bootstrap.github.io/components/placeholder/
 
 const Admin = ({exams}) => {
-    // state = {  } 
-    // render() { 
+    
+    const handleDelete = async () => {
+        const response = await fetch(`http//localhost:9000/${exams._id}`, {
+            method: 'DELETE'
+        })
+        const json = await response.json()
+        
+        if(response.ok){
+            
+        }
+    }
+
     return(
         <Table striped="columns" bordered hover>
             <thead>
@@ -40,7 +50,7 @@ const Admin = ({exams}) => {
                         <td>{exam.NUM_ICU_admits}</td>
                         <td>{exam.MORTALITY}</td>
                         <td><Link to="#"><button className="tableButton">UPDATE</button></Link></td>
-                        <td><Link to="#"><button className="tableButton">DELETE</button></Link></td>
+                        <td><button onClick={handleDelete} className="tableButton">DELETE</button></td>
                     </tr>
                 })}
             </tbody>

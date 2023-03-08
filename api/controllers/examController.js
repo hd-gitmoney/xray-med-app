@@ -54,7 +54,7 @@ const deleteExam = async (req, res) => {
       const exam = await Exam.findOneAndDelete({_id: id})
       //if it does not find the exam
       if(!exam){
-        return res.status(401).json({error: 'No such exam'})
+        return res.status(400).json({error: 'No such exam'})
     }
 
     res.status(200).json(exam)
@@ -70,12 +70,12 @@ const updateExam = async (req, res) => {
         return res.status(404).json({error: 'No such exam'})
     }
         
-    const exam = await exam.findOneAndUPdate({_id: id}, {
+    const exam = await Exam.findOneAndUpdate({_id: id}, {
         ...req.body
     })
 
     if(!exam){
-        return res.status(401).json({error: 'No such exam'})
+        return res.status(400).json({error: 'No such exam'})
     }
 
     res.status(200).json(exam)
