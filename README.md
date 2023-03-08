@@ -59,6 +59,11 @@ Before contributing or adding a new feature, please make sure you have already i
 ## Contributing
 To submit any changes to the code please reach out to [Pamela](https://github.com/PamelaCaguana) 
 
+Contributions to this application inspire creativity and the ability to learn new software.
+All contributions no matter how big or small are appreciated.
+To keep our developer community growing contribute what you can.
+
+
 ## Authors
 (https://github.com/anaselyousfi)
 (https://github.com/PamelaCaguana)
