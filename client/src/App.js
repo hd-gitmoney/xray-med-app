@@ -1,6 +1,6 @@
 import NavBar from './components/Navbar/Navbar.js';
 //import NavBar from './components/NavBar.js';
-import { Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './components/Home/Home';
 import Admin from './components/Admin/Admin.js';
 import XrayForm from './components/Form/xrayForm';
@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <BrowserRouter>
           <NavBar />
             <Routes>
               <Route exact path="/" element={<Home exams={exams} />} />
@@ -22,6 +23,7 @@ function App() {
               {/* replace path for exam details with examID */}
               <Route path="/newx-ray" element={<XrayForm/>} />
             </Routes>
+          </BrowserRouter>
       </header>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {Button, Form, Col, Container, Row} from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 import ExamDetails from '../ExamDetails/ExamDetails.js'
 import './form.css'
 
@@ -20,7 +20,7 @@ function XrayFormOld() {
     };
 
 
-    const navigate = useNavigate()
+    //const navigate = useNavigate()
 
     const [allValues, setAllValues] = useState(initialValues)
 

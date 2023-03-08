@@ -1,16 +1,31 @@
+import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 import './home.css'
 // import Placeholder from 'react-bootstrap/Placeholder';
 
-import { response } from 'express';
 //TODO
 
 //https://react-bootstrap.github.io/components/placeholder/
 
 
 
-const Home = ({exams}) => {
+const Home = () => {
+    const [exams, setExams] = useState(null)
+    
+    useEffect(() => {
+    const fetchExams = async () => {
+      const response = await fetch('htt://localhost:9000')
+      const json = await response.json()
+
+      if (response.ok) {
+        setExams(json)
+        console.log(exams)
+      }
+    }
+
+    fetchExams()
+  }, [])
     return(
                 <Table striped="columns" bordered hover>
                     <thead>
