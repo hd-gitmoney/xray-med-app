@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
+import { Container, Form, InputGroup } from "react-bootstrap";
+import React, { useState } from 'react';
 import './home.css'
 // import Placeholder from 'react-bootstrap/Placeholder';
 
@@ -10,7 +12,17 @@ import './home.css'
 
 
 const Home = ({exams}) => {
-    return(
+    const [search, setSearch] = useState('')
+    return( 
+        
+                <div>
+                <InputGroup>
+                <Form.Control
+                
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder = 'search!'
+                />
+                </InputGroup>
                 <Table striped="columns" bordered hover>
                     <thead>
                         <tr>
@@ -28,7 +40,19 @@ const Home = ({exams}) => {
                         </tr>
                     </thead>
                     <tbody>
-                    {exams.map((exam) => {
+                    {exams.filter((exam) => {
+                        return search.toLowerCase() === '' ? exam : 
+                        exam.AGE.toString().toLowerCase().includes(search) ? exam : 
+                        exam.SEX.toString().includes(search) ? exam : 
+                        exam.PATIENT_ID.toString().includes(search) ? exam : 
+                        exam.ZIP.toString().toLowerCase().includes(search) //? exam : 
+                        //exam.LATESTWEIGHT.toString().includes(search)
+                        // exam.exam_Id.toString().includes(search) ? exam : 
+                        // exam.ICU_Admit.toString().includes(search) ? exam : 
+                        // exam.NUM_ICU_admits.toString().includes(search) ? exam : 
+                        // exam.MORTALITY.toString().includes(search) ? exam : 
+                       
+                    }).map((exam) => {
                             return <tr key={exam._id}>
                                 <td><Link to={`/examdetails/${exam._id}`}>{exam.PATIENT_ID}</Link></td>
                                 <td><Link to={`/examdetails/${exam._id}`}>{exam.exam_Id}</Link></td>
@@ -45,6 +69,7 @@ const Home = ({exams}) => {
                         })}
                     </tbody>
                 </Table>
+            </div>
          );
     }
  
