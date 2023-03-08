@@ -40,7 +40,17 @@ const Home = ({exams}) => {
                     </thead>
                     <tbody>
                     {exams.filter((exam) => {
-                        return search.toLowerCase() === '' ? exam : exam.AGE.toString().toLowerCase().includes(search)
+                        return search.toLowerCase() === '' ? exam : 
+                        exam.AGE.toString().toLowerCase().includes(search) ? exam : 
+                        exam.SEX.toString().includes(search) ? exam : 
+                        exam.PATIENT_ID.toString().includes(search) ? exam : 
+                        exam.ZIP.toString().toLowerCase().includes(search) //? exam : 
+                        //exam.LATESTWEIGHT.toString().includes(search)
+                        // exam.exam_Id.toString().includes(search) ? exam : 
+                        // exam.ICU_Admit.toString().includes(search) ? exam : 
+                        // exam.NUM_ICU_admits.toString().includes(search) ? exam : 
+                        // exam.MORTALITY.toString().includes(search) ? exam : 
+                       
                     }).map((exam) => {
                             return <tr key={exam._id}>
                                 <td><Link to={`/examdetails/${exam._id}`}>{exam.PATIENT_ID}</Link></td>
