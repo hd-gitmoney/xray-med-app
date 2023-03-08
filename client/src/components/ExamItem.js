@@ -31,7 +31,16 @@ const ExamItem = ({exam}) => {
                         <td>{exam.NUM_ICU_admits}</td>
                         <td>{exam.MORTALITY}</td>
                         <td><Link to="#"><button  className="tableButton">UPDATE</button></Link></td>
-                        <td><Link to="#"><button onClick={handleClick} className="tableButton">DELETE</button></Link></td>
+                        <td><Link to="#"><button 
+  
+  onClick={() => {
+    const confirmBox = window.confirm(
+      "Do you really want to delete this Exam?"
+    )
+    if (confirmBox === true) {
+      {handleClick(exam)}
+    }
+  }} className="tableButton">DELETE</button></Link></td>
                     </tr>
     )
 }
