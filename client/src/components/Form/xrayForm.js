@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import {Button, Form, Alert, Col, Container, Row} from 'react-bootstrap';
+import { useExamsContext } from '../../hooks/useExamsContext.js';
 import { useNavigate } from 'react-router-dom';
-import ExamDetails from '../ExamDetails/ExamDetails.js'
+//import ExamDetails from '../ExamDetails/ExamDetails.js';
 import './form.css'
 
-function XrayForm() {
+const XrayForm = () => {
+    const { dispatch } = useExamsContext()
+
     const [PATIENT_ID, setPATIENT_ID] = useState('');
     const [exam_Id, setExam_Id] = useState('');
     const [AGE, setAGE] = useState('');
@@ -18,8 +21,7 @@ function XrayForm() {
     const [png_filename, setPng_filename] = useState('COVID-19-AR-16434358_XR_CHEST_AP_PORTABLE_4.png');
     const [error, setError] = useState(null);
 
-
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
 
     const handleSubmit = async (e) => {
@@ -58,6 +60,7 @@ function XrayForm() {
             setMORTALITY('')
             setError(null)
             console.log("New Exam Added:", json)
+            navigate('/')
         }
     }
 
