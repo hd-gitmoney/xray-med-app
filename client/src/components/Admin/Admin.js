@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import Table from 'react-bootstrap/Table';
 import Placeholder from 'react-bootstrap/Placeholder';
+import { useExamContext } from '../../hooks/use-ExamContext';
 //TODO
 //https://react-bootstrap.github.io/components/placeholder/
-import { useState, useEffect } from 'react';
 
 const API_ROOT = 'http://localhost:9000';
 
 
 const Admin = () => {
-    const [exams, setExams] = useState([]);
+    const [exams, setExams] = useState(null);
 
     // const fetchExams = () => {
     //   fetch(`${API_ROOT}/${path}`)
@@ -32,7 +32,10 @@ const Admin = () => {
     useEffect(() => {
       fetchExams();
     }, []);
-    // state = {  } 
+    // state = {  }
+    // fetch and load to payload coming from dispatch instead
+    // pull from dispatch to json and send POST request
+    // check with Postman program to see all requests
     // render() { 
     return(
         <Table striped="columns" bordered hover>
@@ -52,7 +55,7 @@ const Admin = () => {
                 </tr>
             </thead>
             <tbody>
-                {exams.map((exam) => {
+                {exams && exams.map((exam) => {
                     return <tr key={exam._id}>
                         <td><Link>{exam.PATIENT_ID}</Link></td>
                         <td>{exam.AGE}</td>

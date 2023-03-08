@@ -9,11 +9,11 @@ import { ExamContextProvider } from './context/ExamContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
     <ExamContextProvider>
+    <BrowserRouter>
         <App />
-    </ExamContextProvider>
     </BrowserRouter>
+    </ExamContextProvider>
   </React.StrictMode>
 );
 

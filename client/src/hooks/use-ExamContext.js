@@ -1,5 +1,5 @@
-import { ExamContext } from "../context/ExamContext";
-import { useContext } from "react";
+import { ExamContext } from "../context/ExamContext"
+import { useContext } from "react"
 
 
 export const useExamContext = () => {

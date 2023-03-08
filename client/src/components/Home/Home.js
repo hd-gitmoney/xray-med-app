@@ -14,13 +14,13 @@ const API_ROOT = 'http://localhost:9000';
 
 
 
-const Home = ({exams}) => {
-    const {exam, dispatch } = useExamContext()
+const Home = () => {
+    const {exams, dispatch } = useExamContext()
 
 
 
   useEffect(() => {
-    const fetchExams = async () => {
+      const fetchExams = async () => {
       const response = await fetch(`${API_ROOT}`)
       const json = await response.json()
   

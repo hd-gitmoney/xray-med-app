@@ -7,15 +7,15 @@ export const examReducer = (state, action) => {
     switch(action.type){
         case FETCH_ALL:
             return {
-                exam: action.payload
+                exams : action.payload
             }
         case DELETE:
             return {
-                exam : action.payload
+                exams  : action.payload
             }
 
 
-        default :
+        default:
             return state
     }
 }
@@ -24,7 +24,7 @@ export const examReducer = (state, action) => {
 
 export const ExamContextProvider = ({ children }) => {
     const [state, dispatch] = useReducer(examReducer, { 
-        exam: null
+        exams : null
     })
 
     
