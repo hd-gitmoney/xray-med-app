@@ -2,7 +2,7 @@ import NavBar from './components/Navbar/Navbar.js';
 //import NavBar from './components/NavBar.js';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home.js';
-import Admin from './pages/Admin.js';
+//import Admin from './pages/Admin.js';
 import XrayForm from './components/Form/xrayForm';
 import ExamDetails from './components/ExamDetails/ExamDetails.js';
 
@@ -17,7 +17,7 @@ function App() {
           <NavBar />
             <Routes>
               <Route exact path="/" element={<Home />} />
-              <Route path="/admin" element={<Admin />} />
+              {/* <Route path="/admin" element={<Admin />} /> */}
               <Route path="/examdetails/:id" element={<ExamDetails />} /> 
               {/* TODO */}
               {/* replace path for exam details with examID */}

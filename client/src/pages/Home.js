@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchExams = async () => {
-      const response = await fetch('http://localhost:9000/')
+      const response = await fetch('http://localhost:9000')
       const json = await response.json()
 
       if (response.ok) {

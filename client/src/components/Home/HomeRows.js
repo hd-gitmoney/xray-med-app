@@ -1,8 +1,20 @@
 import { Link } from "react-router-dom";
+import { useExamsContext } from "../../hooks/useExamsContext";
 import './home.css';
 
 const HomeRows = ({ exam }) => {
-  
+  const { dispatch } = useExamsContext()
+    
+    const handleClick = async () => {
+        const response = await fetch(`/${exam._id}`, {
+            method: 'DELETE'
+        })
+        const json = await response.json()
+        
+        if(response.ok){
+            dispatch({type: 'DELETE_EXAM', payload: json })
+        }
+    }
   return (
     <tr>
           <td><Link to={`/examdetails/${exam._id}`}>{exam.PATIENT_ID}</Link></td>
@@ -16,6 +28,8 @@ const HomeRows = ({ exam }) => {
           <td>{exam.ICU_Admit}</td> 
           <td>{exam.NUM_ICU_admits}</td>
           <td>{exam.MORTALITY}</td>
+          <td><button className="tableButton">UPDATE</button></td>
+          <td><button onClick={handleClick} className="tableButton">DELETE</button></td>
     </tr>
   )
 }
