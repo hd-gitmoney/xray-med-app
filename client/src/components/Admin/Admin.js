@@ -55,7 +55,7 @@ const Admin = () => {
                 </tr>
             </thead>
             <tbody>
-                {exams && exams.map((exam) => {
+            {exams && exams.map((exam) => {
                     return <tr key={exam._id}>
                         <td><Link>{exam.PATIENT_ID}</Link></td>
                         <td>{exam.AGE}</td>
