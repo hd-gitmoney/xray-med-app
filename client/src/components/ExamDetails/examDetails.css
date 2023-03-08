@@ -2,11 +2,33 @@
     display: flex;
 }
 
-.examDetails{
-    justify-content: space-around;
-    width: 45vw;
+.titleDiv{
+    padding-top: 25px;
+    padding-bottom: 55px;
+    text-align: center;
 }
 
-.titleDiv{
-    width: 300px;
+.cards{
+    width: 320px;
+    height: 415px;
 }
+
+.flexColumnCard{
+    display: flex;
+}
+
+.flexCard{
+    flex: 1;
+    justify-content: space-around;
+}
+
+.bottomPattingToDiv{
+    padding-bottom: 25px;
+}
+
+.bodyStyle h3, h5, p{
+    text-align: center;
+}
+
+
+
