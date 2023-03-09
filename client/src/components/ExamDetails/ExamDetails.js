@@ -26,7 +26,6 @@ const ExamDetails = () => {
                <Container>
                <div className="titleDiv">
                 <h1>Exam Details</h1>
-                <Link to={`/edit/${params.id}`}><button className="editButton">Edit Exam Info</button></Link>
             </div>
                     <Row>
                         <Col className="flexColumnCard">
