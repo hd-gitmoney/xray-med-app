@@ -3,7 +3,7 @@ import { Button, Form, Alert } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './form.css'
 
-const NewExam = () => {
+export const NewExam = () => {
 
     const [PATIENT_ID, setPATIENT_ID] = useState('');
     const [exam_Id, setExam_Id] = useState('');
@@ -177,5 +177,3 @@ const NewExam = () => {
             </div>
         );
 }
-
-export default NewExam;
