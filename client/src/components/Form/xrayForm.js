@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import {Button, Form, Alert, Col, Container, Row} from 'react-bootstrap';
-import { useExamsContext } from '../../hooks/useExamsContext.js';
+import { Button, Form, Alert } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-//import ExamDetails from '../ExamDetails/ExamDetails.js';
 import './form.css'
 
 const XrayForm = () => {
-    const { dispatch } = useExamsContext()
 
     const [PATIENT_ID, setPATIENT_ID] = useState('');
     const [exam_Id, setExam_Id] = useState('');
@@ -64,14 +61,9 @@ const XrayForm = () => {
         }
     }
 
-    // useEffect(() => {
-    //     localStorage.setItem('allValues', JSON.stringify(allValues));
-    //   }, [allValues]);
 
         return (
             <div className="centerform">
-                {/* {allValues.isSubmitted ? 
-                    <ExamDetails xray={allValues}/> : */}
                     <Form onSubmit={handleSubmit}>
                         <Form.Group controlId="formPatientId">
                             <Form.Label>Patient ID</Form.Label>
@@ -186,7 +178,6 @@ const XrayForm = () => {
                         </Button>
                         {error && <Alert variant='danger' className="formError">{error}</Alert>}
                     </Form>
-                {/* } */}
             </div>
         );
 }
