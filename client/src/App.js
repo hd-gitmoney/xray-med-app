@@ -6,21 +6,8 @@ import Home from './pages/Home.js';
 import XrayForm from './components/Form/xrayForm';
 import ExamDetails from './components/ExamDetails/ExamDetails.js';
 import { UpdateExam } from './pages/UpdateExam.js';
-import { useState } from 'react';
 
 //import { useApi } from './hooks/use-api';
-
-// const filterPosts = (exams, query) => {
-//   if (!query) {
-//       return exams;
-//   }
-
-//   return exams.filter((exams) => {
-//       const postName = exams.AGE.toLowerCase();
-//       return postName.includes(query);
-//   });
-// };
-
 
 function App() {
 
@@ -29,21 +16,6 @@ function App() {
 
   return (
     <div className="App">
-                {/* <Announcer
-                    message={`${filteredPosts.length} posts`}
-                />
-
-                <Search
-                    searchQuery={searchQuery}
-                    setSearchQuery={setSearchQuery}
-                />
-                <ul>
-                    {filteredPosts.map((exams) => (
-                        <li key={exams.id}>{exams.name}</li>
-                    ))}
-                </ul> */}
-
-       
       <header className="App-header">
         <BrowserRouter>
           <NavBar />

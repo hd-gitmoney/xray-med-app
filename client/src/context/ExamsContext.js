@@ -20,7 +20,7 @@ export const examsReducer = (state, action) => {
       const updatedExam = action.payload;
       
       const updatedExams = state.exams.map((exam) => {
-        if (exam.id === updatedExam.id) {
+        if (exam._id === updatedExam._id) {
           return updatedExam;
         }
         return exam;
