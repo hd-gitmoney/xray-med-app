@@ -22,9 +22,6 @@ const XrayForm = () => {
 
 
     const handleSubmit = async (e) => {
-        //We need default behavior to go a new GET after submitting form
-        //might be more efficient to use createContext from react
-        //currently still needs to refresh home page to see new submitted form data
         e.preventDefault();
 
         const exam = { PATIENT_ID, AGE, SEX, ZIP, LATEST_BMI,LATESTWEIGHT, png_filename, exam_Id, ICU_Admit, NUM_ICU_admits, MORTALITY }
