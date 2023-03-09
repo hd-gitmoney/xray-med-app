@@ -1,7 +1,7 @@
 import NavBar from './components/NavBar'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home.js';
-import NewExam  from './components/Form/NewExam.js';
+import NewExam from './components/Form/NewExam';
 import ExamDetails from './components/ExamDetails/ExamDetails.js';
 import { UpdateExam } from './pages/UpdateExam.js';
 
