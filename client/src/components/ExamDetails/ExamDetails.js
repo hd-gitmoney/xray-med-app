@@ -11,7 +11,7 @@ const ExamDetails = () => {
     //getting data from API
     useEffect(() => {
         const fetchExam = async () => {
-            const response = await fetch(`http://localhost:9000/${params.id}`)
+            const response = await fetch(`https://xray-api-backend.onrender.com/${params.id}`)
             const json = await response.json()
             if(response.ok){
                 setExam(json)

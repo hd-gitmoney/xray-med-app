@@ -17,7 +17,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchExams = async () => {
-      const response = await fetch('http://localhost:9000')
+      const response = await fetch('https://xray-api-backend.onrender.com/')
       const json = await response.json()
 
       if (response.ok) {
@@ -61,7 +61,7 @@ const Home = () => {
                                 return search === '' ? exam : 
                                 exam.AGE.includes(search) ? exam : 
                                 exam.SEX.includes(search) ? exam : 
-                                exam.PATIENT_ID.toUpperCase().includes(search) ? exam : 
+                                exam.PATIENT_ID.includes(search) ? exam : 
                                 exam.exam_Id.includes(search) ? exam : 
                                 exam.ZIP.includes(search) ? exam : 
                                 exam.LATESTWEIGHT.includes(search) ? exam :

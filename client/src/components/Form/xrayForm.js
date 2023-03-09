@@ -29,7 +29,7 @@ const XrayForm = () => {
 
         const exam = { PATIENT_ID, AGE, SEX, ZIP, LATEST_BMI,LATESTWEIGHT, png_filename, exam_Id, ICU_Admit, NUM_ICU_admits, MORTALITY }
 
-        const response = await fetch('http://localhost:9000/', {
+        const response = await fetch('https://xray-api-backend.onrender.com/', {
             method: 'POST',
             body: JSON.stringify(exam),
             headers: {

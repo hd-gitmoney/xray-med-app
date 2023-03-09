@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:9000",
+  "proxy": "https://xray-api-backend.onrender.com/",
   "name": "client",
   "version": "0.1.0",
   "private": true,

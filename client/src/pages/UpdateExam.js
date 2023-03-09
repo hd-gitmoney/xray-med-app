@@ -44,7 +44,7 @@ export const UpdateExam = () => {
         //seting local state equal to currentExam
         currentExam = selectedExam;
        
-        const response = await fetch(`http://localhost:9000/${params.id}`, {
+        const response = await fetch(`https://xray-api-backend.onrender.com/${params.id}`, {
             method: "PATCH",
             body: JSON.stringify(currentExam),
             headers: {
