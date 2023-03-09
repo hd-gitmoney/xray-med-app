@@ -3,13 +3,6 @@ import Table from 'react-bootstrap/Table';
 import { useExamsContext } from '../hooks/useExamsContext';
 import HomeRows from '../components/Home/HomeRows';
 import { Form, InputGroup } from "react-bootstrap";
-// import Placeholder from 'react-bootstrap/Placeholder';
-
-//TODO
-
-//https://react-bootstrap.github.io/components/placeholder/
-
-
 
 const Home = () => {
     const [search, setSearch] = useState('')

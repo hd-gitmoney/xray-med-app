@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useExamsContext } from '../hooks/useExamsContext';
 import {Button, Form, Container } from 'react-bootstrap';
-import "../components/Form/form.css"
 
 
 export const UpdateExam = () => {
