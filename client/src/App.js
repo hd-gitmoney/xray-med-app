@@ -10,9 +10,6 @@ import { UpdateExam } from './pages/UpdateExam.js';
 
 function App() {
 
-  const [search, setSearch] = useState('')
-
-
   return (
     <div className="App">
       <header className="App-header">

@@ -57,6 +57,7 @@ export const UpdateExam = () => {
                 dispatch({type: "UPDATE_EXAM", payload: json})
                 navigate(`/examdetails/${params.id}`)
             };
+        
     }
  
 
@@ -137,101 +138,92 @@ export const UpdateExam = () => {
             </form> */}
             <Container>
             <div className="titleDiv">
-                <h1>Edit Exam Details</h1>
+                <h1>Exam Details</h1>
+                <h2>Edit Form</h2>
             </div>
             <div className="centerform">
                     <Form>
                         <Form.Group controlId="formPatientId">
                             <Form.Label>Patient ID</Form.Label>
                             <Form.Control 
-                            name="patientId" 
+                            name="patientId"
                             type="text" 
-                            placeholder="Enter Patient ID"
-                            onChange={(e) => handleOnChange("PATIENT_ID", e.target.value)}
-                            value={selectedExam.PATIENT_ID} />
+                            value={selectedExam.PATIENT_ID}
+                            onChange={(e) => handleOnChange("PATIENT_ID", e.target.value)} />
                         </Form.Group> 
                         <Form.Group controlId="formExamId">
                             <Form.Label>Exam ID</Form.Label>
                             <Form.Control 
                             name="examId" 
                             type="text" 
-                            placeholder="Enter Exam ID"
-                            onChange={(e) => handleOnChange("exam_Id", e.target.value)}
-                            value={selectedExam.exam_Id}/>
+                            value={selectedExam.exam_Id}
+                            onChange={(e) => handleOnChange("exam_Id", e.target.value)}/>
                         </Form.Group>
                         <Form.Group controlId="formAge">
                             <Form.Label>Age</Form.Label>
                             <Form.Control 
                             name="age"
-                            type="number"
-                            placeholder="Enter Age"
-                            onChange={(e) => handleOnChange("AGE", e.target.value)}
-                            value={selectedExam.AGE}  />
+                            type="string"
+                            value={selectedExam.AGE}  
+                            onChange={(e) => handleOnChange("AGE", e.target.value)}/>
                         </Form.Group>
                         <Form.Group controlId="formSex">
                             <Form.Label>Sex</Form.Label>
                             <Form.Control 
                             name="sex" 
                             type="text" 
-                            placeholder="Enter Sex"
-                            onChange={(e) => handleOnChange("SEX", e.target.value)}
-                            value={selectedExam.SEX} />
+                            value={selectedExam.SEX} 
+                            onChange={(e) => handleOnChange("SEX", e.target.value)} />
                         </Form.Group>
                         <Form.Group controlId="formZip">
                             <Form.Label>Zip</Form.Label>
                             <Form.Control 
                             name="zip" 
-                            type="number" 
-                            placeholder="Enter Zip"
-                            onChange={(e) => handleOnChange("ZIP", e.target.value)}
-                            value={selectedExam.ZIP} />
+                            type="string"
+                            value={selectedExam.ZIP} 
+                            onChange={(e) => handleOnChange("ZIP", e.target.value)} />
                         </Form.Group>
                         <Form.Group controlId="formLatestBMI">
                             <Form.Label>BMI</Form.Label>
                             <Form.Control 
                             name="latestBMI" 
-                            type="number" 
-                            placeholder="Enter Latest BMI"
-                            onChange={(e) => handleOnChange("LATEST_BMI", e.target.value)}
-                            value={selectedExam.LATEST_BMI} />
+                            type="string"
+                            value={selectedExam.LATEST_BMI} 
+                            onChange={(e) => handleOnChange("LATEST_BMI", e.target.value)} />
                         </Form.Group>
                         <Form.Group controlId="formLatestWeight">
                             <Form.Label>Weight</Form.Label>
                             <Form.Control 
                             name="weight" 
-                            type="number" 
-                            placeholder="Enter Latest Weight"
-                            onChange={(e) => handleOnChange("LATESTWEIGHT", e.target.value)}
-                            value={selectedExam.LATESTWEIGHT} />
+                            type="string" 
+                            value={selectedExam.LATESTWEIGHT} 
+                            onChange={(e) => handleOnChange("LATESTWEIGHT", e.target.value)}/>
                         </Form.Group>
                         <Form.Group controlId="formICUAdmit">
                             <Form.Label>ICU Admit</Form.Label>
                             <Form.Control 
                             name="ICU Admit" 
                             type="text" 
-                            placeholder="Enter Y/N"
                             maxLength={1}
-                            onChange={(e) => handleOnChange("ICU_Admit", e.target.value)}
-                            value = {selectedExam.ICU_admits} />
+                            value = {selectedExam.ICU_Admit}
+                            onChange={(e) => handleOnChange("ICU_Admit", e.target.value)} />
                         </Form.Group>
                         <Form.Group controlId="formNumICUAdmit">
                             <Form.Label>Number of ICU Admits</Form.Label>
                             <Form.Control 
                             name="numICUAdmits" 
-                            type="number" 
-                            placeholder="Enter Number of ICU Admits"
-                            onChange={(e) => handleOnChange("NUM_ICU_admits", e.target.value)}
-                            value={selectedExam.NUM_ICU_admits} />
+                            type="string"
+                            value={selectedExam.NUM_ICU_admits} 
+                            onChange={(e) => handleOnChange("NUM_ICU_admits", e.target.value)} />
                         </Form.Group>
                         <Form.Group controlId="formMortality">
                             <Form.Label>Mortality</Form.Label>
                             <Form.Control 
                             name="mortality"  
                             type="text" 
-                            placeholder="Enter Y/N"
                             maxLength={1}
-                            onChange={(e) => handleOnChange("MORTALITY", e.target.value)}
-                            value={selectedExam.MORTALITY} />
+                            value={selectedExam.MORTALITY} 
+                            onChange={(e) => handleOnChange("MORTALITY", e.target.value)} />
                         </Form.Group>
                         {/* <Form.Group controlId="formImage">
                             <Form.Label>Image</Form.Label>
@@ -250,7 +242,8 @@ export const UpdateExam = () => {
                             className="formButton"> 
                             Save Information
                         </Button>
-                        <Link to={`/examdetails/${params.id}`} ><Button variant="secondary" className="formButton cancelButton">Cancel</Button>
+                        <Link to={`/examdetails/${params.id}`} >
+                            <Button variant="secondary" className="formButton cancelButton">Cancel</Button>
                         </Link>
                     </Form>
                 </div>

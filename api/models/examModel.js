@@ -8,7 +8,7 @@ const examSchema = new Schema({
         required: true
     },
     AGE: {
-        type: Number,
+        type: String,
         required: true
     },
     SEX: {
@@ -16,15 +16,15 @@ const examSchema = new Schema({
         required: true
     },
     ZIP: {
-        type: Number,
+        type: String,
         required: true
     },
     LATEST_BMI: {
-        type: Number,
+        type: String,
         required: true
     },
     LATESTWEIGHT: {
-        type: Number,
+        type: String,
         required: true
     },
     png_filename: {
@@ -40,7 +40,7 @@ const examSchema = new Schema({
         required: true
     },
     NUM_ICU_admits: {
-        type: Number,
+        type: String,
         required: true
     },
     MORTALITY: {
