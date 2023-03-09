@@ -28,7 +28,7 @@ In order to run the server, you'll run the following commands:
 ```bash
 cd api/
 npm i
-npm start
+npm run dev
 ```
 
  
