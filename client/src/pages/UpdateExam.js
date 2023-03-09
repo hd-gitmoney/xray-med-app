@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useExamsContext } from '../hooks/useExamsContext';
-import {Button, Form} from 'react-bootstrap';
+import {Button, Form, Container } from 'react-bootstrap';
 import "../components/Form/form.css"
 
 
-export const UpdateExam = () => {
 export const UpdateExam = () => {
     const { exams, dispatch } = useExamsContext();
     const params = useParams();
@@ -136,6 +135,7 @@ export const UpdateExam = () => {
                 <Link to="/" className='cancelButton'>Cancel</Link>
             </div>
             </form> */}
+            <Container>
             <div className="titleDiv">
                 <h1>Edit Exam Details</h1>
             </div>
@@ -250,11 +250,11 @@ export const UpdateExam = () => {
                             className="formButton"> 
                             Save Information
                         </Button>
-                        <Button>
-                            Cancel
-                        </Button>
+                        <Link to={`/examdetails/${params.id}`} ><Button variant="secondary" className="formButton cancelButton">Cancel</Button>
+                        </Link>
                     </Form>
                 </div>
+            </Container>
         </>
     )
 }
