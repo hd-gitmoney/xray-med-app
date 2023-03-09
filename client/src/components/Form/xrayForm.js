@@ -97,7 +97,7 @@ const XrayForm = () => {
                             <Form.Label>Age</Form.Label>
                             <Form.Control 
                             name="age"
-                            type="number"
+                            type="text"
                             placeholder="Enter Age"
                             onChange={(e) => setAGE(e.target.value)}
                             value={AGE}  />
@@ -115,7 +115,7 @@ const XrayForm = () => {
                             <Form.Label>Zip</Form.Label>
                             <Form.Control 
                             name="zip" 
-                            type="number" 
+                            type="text" 
                             placeholder="Enter Zip"
                             onChange={(e) => setZIP(e.target.value)}
                             value={ZIP} />
@@ -124,7 +124,7 @@ const XrayForm = () => {
                             <Form.Label>BMI</Form.Label>
                             <Form.Control 
                             name="latestBMI" 
-                            type="number" 
+                            type="text" 
                             placeholder="Enter Latest BMI"
                             onChange={(e) => setLATEST_BMI(e.target.value)}
                             value={LATEST_BMI} />
@@ -133,7 +133,7 @@ const XrayForm = () => {
                             <Form.Label>Weight</Form.Label>
                             <Form.Control 
                             name="weight" 
-                            type="number" 
+                            type="text" 
                             placeholder="Enter Latest Weight"
                             onChange={(e) => setLATESTWEIGHT(e.target.value)}
                             value={LATESTWEIGHT} />
@@ -152,7 +152,7 @@ const XrayForm = () => {
                             <Form.Label>Number of ICU Admits</Form.Label>
                             <Form.Control 
                             name="numICUAdmits" 
-                            type="number" 
+                            type="text" 
                             placeholder="Enter Number of ICU Admits"
                             onChange={(e) => setNUM_ICU_admits(e.target.value)}
                             value={NUM_ICU_admits} />

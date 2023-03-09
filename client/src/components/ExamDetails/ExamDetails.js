@@ -21,11 +21,13 @@ const ExamDetails = () => {
     }, [])
     return (
         <>  
-            <div className="titleDiv">
-                <h1>Exam Details</h1>
-            </div>
+            
             <div className="examDetailsBody">
                <Container>
+               <div className="titleDiv">
+                <h1>Exam Details</h1>
+                <Link to={`/edit/${params.id}`}><button className="editButton">Edit Exam Info</button></Link>
+            </div>
                     <Row>
                         <Col className="flexColumnCard">
                             <Card className="flexCard">
@@ -84,7 +86,7 @@ const ExamDetails = () => {
                                         <h3>Exam ID:</h3>
                                         <p>{exam.exam_Id}</p>
                                     </div>
-                                    <Card.Img style={{width: "50%", height:"50%", margin:"auto", display:"block"}} variant="top" src={`https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/${exam.png_filename}`} />
+                                    <Card.Img style={{width: "60%", height:"65%", margin:"auto", display:"block"}} variant="top" src={`https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/${exam.png_filename}`} />
                                 </Card.Body>
                             </Card>
                         </Col>

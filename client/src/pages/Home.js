@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import { useExamsContext } from '../hooks/useExamsContext';
 import HomeRows from '../components/Home/HomeRows';
-import { Container, Form, InputGroup } from "react-bootstrap";
+import { Form, InputGroup } from "react-bootstrap";
 // import Placeholder from 'react-bootstrap/Placeholder';
 
 //TODO
@@ -31,13 +31,15 @@ const Home = () => {
 
     return(
       <div>
-                <InputGroup>
-                <Form.Control
-                
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder = 'search!'
-                />
-                </InputGroup>
+        <div className="searchBar" >
+          <InputGroup  size="lg" >
+              <InputGroup.Text id="inputGroup-sizing-lg">Search:</InputGroup.Text>
+              <Form.Control
+              
+              onChange={(e) => setSearch(e.target.value)}
+              />
+          </InputGroup>
+        </div>
                 <Table striped="columns" bordered hover>
                     <thead>
                         <tr>
@@ -56,16 +58,16 @@ const Home = () => {
                     </thead>
                     <tbody>
                             {exams && exams.filter((exam) => {
-                                return search.toLowerCase() === '' ? exam : 
-                                exam.AGE.toString().toLowerCase().includes(search) ? exam : 
-                                exam.SEX.toString().includes(search) ? exam : 
-                                exam.PATIENT_ID.toString().includes(search) ? exam : 
-                                exam.ZIP.toString().toLowerCase().includes(search) //? exam : 
-                                //exam.LATESTWEIGHT.toString().includes(search)
-                                // exam.exam_Id.toString().includes(search) ? exam : 
-                                // exam.ICU_Admit.toString().includes(search) ? exam : 
-                                // exam.NUM_ICU_admits.toString().includes(search) ? exam : 
-                                // exam.MORTALITY.toString().includes(search) ? exam : 
+                                return search === '' ? exam : 
+                                exam.AGE.includes(search) ? exam : 
+                                exam.SEX.includes(search) ? exam : 
+                                exam.PATIENT_ID.toUpperCase().includes(search) ? exam : 
+                                exam.exam_Id.includes(search) ? exam : 
+                                exam.ZIP.includes(search) ? exam : 
+                                exam.LATESTWEIGHT.includes(search) ? exam :
+                                exam.ICU_Admit.includes(search) ? exam : 
+                                exam.NUM_ICU_admits.includes(search) ? exam : 
+                                exam.MORTALITY.includes(search) 
                        
                             }).map(exam => (
                                 <HomeRows exam={exam} key={exam._id} />))}

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useExamsContext } from "../../hooks/useExamsContext";
-import './home.css';
+import './homeRows.css';
 
 const HomeRows = ({ exam }) => {
   const { dispatch } = useExamsContext()
