@@ -17,7 +17,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route path="/examdetails/:id" element={<ExamDetails />} />
               <Route path="/edit/:id" element={<UpdateExam />} />
-              <Route path="/form" element={ <NewExam /> } />
+              <Route exact path="/newExam" element={ <NewExam /> } />
             </Routes>
           </BrowserRouter>
       </header>
