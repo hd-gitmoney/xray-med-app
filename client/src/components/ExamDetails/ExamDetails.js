@@ -23,7 +23,6 @@ const ExamDetails = () => {
         <>  
             <div className="titleDiv">
                 <h1>Exam Details</h1>
-                <Link to={`/edit/${params.id}`}><button className="editButton">Edit Employee</button></Link>
             </div>
             <div className="examDetailsBody">
                <Container>
