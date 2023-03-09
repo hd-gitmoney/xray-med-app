@@ -18,7 +18,7 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Exams</Nav.Link>
-            <Nav.Link href="/newx-ray">Add New Exam</Nav.Link>
+            <Nav.Link href="/form">Add New Exam</Nav.Link>
               <NavDropdown.Divider />
           </Nav>
         </Navbar.Collapse>
