@@ -25,12 +25,11 @@ export const UpdateExam = () => {
         ICU_Admit: '',
         NUM_ICU_admits: '',
         MORTALITY: '',
-        //Png_filename('COVID-19-AR-16434358_XR_CHEST_AP_PORTABLE_4.png')
     });
 
    //creating an object to store the exam with the same ID
     let currentExam = {};
-    //iterating through exams to find the one that equals the URL ID and storing it to currentExam obj
+    //iterating through exams to find the one that equals the param.id and store it to currentExam obj
     for(let exam in exams){
        if(params.id === exams[exam]._id){
         currentExam = exams[exam]
@@ -41,8 +40,17 @@ export const UpdateExam = () => {
 
     const updateExam = async (e) => {
         e.preventDefault()
-        //seting local state equal to currentExam
-        currentExam = selectedExam;
+       
+        //iterating through local state
+        for(let values in selectedExam){
+            //if local state values are empty we want to add the exam we found through params values to it
+            if(selectedExam[values] === ''){
+                selectedExam[values] = currentExam[values];
+            }else{
+                //if not empty we will just add that value to the exam we found through params
+                currentExam[values] = selectedExam[values]
+            }
+        }
        
         const response = await fetch(`http://localhost:9000/${params.id}`, {
             method: "PATCH",
@@ -69,73 +77,6 @@ export const UpdateExam = () => {
 
     return (
         <>  
-            {/* <div className="titleDiv">
-                <h1>Edit Exam Details</h1>
-            </div>
-            <form>
-            <div className="examDetailsBody">
-                <section className="patientInfo examDetails">
-                    <h2>Patient Info</h2>
-                    <label>Patient ID:</label>
-                        <input 
-                        value = {selectedExam.PATIENT_ID}
-                        onChange={(e) => handleOnChange("PATIENT_ID", e.target.value)}
-                        type="text" />
-                    <label>Age:</label>
-                        <input 
-                        value = {selectedExam.AGE}
-                        onChange={(e) => handleOnChange("AGE", e.target.value)}
-                        type="number" />
-                    <label>Sex:</label>
-                        <input 
-                        value = {selectedExam.SEX}
-                        onChange={(e) => handleOnChange("SEX", e.target.value)}
-                        type="text" />
-                    <label>Zip:</label>
-                        <input 
-                        value = {selectedExam.ZIP}
-                        onChange={(e) => handleOnChange("ZIP", e.target.value)}
-                        type="number" />
-                    <label>Latest BMI:</label>
-                        <input 
-                        value = {selectedExam.LATEST_BMI}
-                        onChange={(e) => handleOnChange("LATEST_BMI", e.target.value)}
-                        type="number" />
-                    <label>Latest Weight:</label>
-                        <input 
-                        value = {selectedExam.LATESTWEIGHT}
-                        onChange={(e) => handleOnChange("LATESTWEIGHT", e.target.value)}
-                        type="number" />
-                    <label>ICU Admit:</label>
-                        <input 
-                        value = {selectedExam.ICU_Admit}
-                        onChange={(e) => handleOnChange("ICU_Admit", e.target.value)}
-                        type="text" />
-                    <label>Number of ICU Admits:</label>
-                        <input 
-                        value = {selectedExam.NUM_ICU_admits}
-                        onChange={(e) => handleOnChange("NUM_ICU_admits", e.target.value)}
-                        type="number" />
-                    <label>Mortality:</label>
-                        <input 
-                        value = {selectedExam.MORTALITY}
-                        onChange={(e) => handleOnChange("MORTALITY", e.target.value)}
-                        type="text" />
-                </section>
-                <section className="examInfo examDetails">
-                    <h2>Exam Info</h2>
-                        <label>Exam ID:</label>
-                            <input 
-                            value = {selectedExam.exam_Id}
-                            onChange={(e) => handleOnChange("exam_Id", e.target.value)}
-                            type="text" />
-                        <h3>Image:</h3>
-                            <img src={`https://ohif-hack-diversity-covid.s3.amazonaws.com/covid-png/${params.png_filename}`} alt="Chest X-Ray"  />
-                </section>
-                <button onClick={updateExam}>Save Information</button>
-                <Link to="/" className='cancelButton'>Cancel</Link>
-            </div>
-            </form> */}
             <Container>
             <div className="titleDiv">
                 <h1>Exam Details</h1>
@@ -147,7 +88,8 @@ export const UpdateExam = () => {
                             <Form.Label>Patient ID</Form.Label>
                             <Form.Control 
                             name="patientId"
-                            type="text" 
+                            type="text"
+                            placeholder={`Edit ${currentExam.PATIENT_ID}`}
                             value={selectedExam.PATIENT_ID}
                             onChange={(e) => handleOnChange("PATIENT_ID", e.target.value)} />
                         </Form.Group> 
@@ -155,7 +97,8 @@ export const UpdateExam = () => {
                             <Form.Label>Exam ID</Form.Label>
                             <Form.Control 
                             name="examId" 
-                            type="text" 
+                            type="text"
+                            placeholder={`Edit ${currentExam.exam_Id}`} 
                             value={selectedExam.exam_Id}
                             onChange={(e) => handleOnChange("exam_Id", e.target.value)}/>
                         </Form.Group>
@@ -164,6 +107,7 @@ export const UpdateExam = () => {
                             <Form.Control 
                             name="age"
                             type="string"
+                            placeholder={`Edit ${currentExam.AGE}`}
                             value={selectedExam.AGE}  
                             onChange={(e) => handleOnChange("AGE", e.target.value)}/>
                         </Form.Group>
@@ -171,7 +115,8 @@ export const UpdateExam = () => {
                             <Form.Label>Sex</Form.Label>
                             <Form.Control 
                             name="sex" 
-                            type="text" 
+                            type="text"
+                            placeholder={`Edit ${currentExam.SEX}`} 
                             value={selectedExam.SEX} 
                             onChange={(e) => handleOnChange("SEX", e.target.value)} />
                         </Form.Group>
@@ -180,6 +125,7 @@ export const UpdateExam = () => {
                             <Form.Control 
                             name="zip" 
                             type="string"
+                            placeholder={`Edit ${currentExam.ZIP}`}
                             value={selectedExam.ZIP} 
                             onChange={(e) => handleOnChange("ZIP", e.target.value)} />
                         </Form.Group>
@@ -188,6 +134,7 @@ export const UpdateExam = () => {
                             <Form.Control 
                             name="latestBMI" 
                             type="string"
+                            placeholder={`Edit ${currentExam.LATEST_BMI}`}
                             value={selectedExam.LATEST_BMI} 
                             onChange={(e) => handleOnChange("LATEST_BMI", e.target.value)} />
                         </Form.Group>
@@ -195,7 +142,8 @@ export const UpdateExam = () => {
                             <Form.Label>Weight</Form.Label>
                             <Form.Control 
                             name="weight" 
-                            type="string" 
+                            type="string"
+                            placeholder={`Edit ${currentExam.LATESTWEIGHT}`}
                             value={selectedExam.LATESTWEIGHT} 
                             onChange={(e) => handleOnChange("LATESTWEIGHT", e.target.value)}/>
                         </Form.Group>
@@ -203,7 +151,8 @@ export const UpdateExam = () => {
                             <Form.Label>ICU Admit</Form.Label>
                             <Form.Control 
                             name="ICU Admit" 
-                            type="text" 
+                            type="text"
+                            placeholder={`Edit ${currentExam.ICU_Admit}`}
                             maxLength={1}
                             value = {selectedExam.ICU_Admit}
                             onChange={(e) => handleOnChange("ICU_Admit", e.target.value)} />
@@ -213,6 +162,7 @@ export const UpdateExam = () => {
                             <Form.Control 
                             name="numICUAdmits" 
                             type="string"
+                            placeholder={`Edit ${currentExam.NUM_ICU_admits}`}
                             value={selectedExam.NUM_ICU_admits} 
                             onChange={(e) => handleOnChange("NUM_ICU_admits", e.target.value)} />
                         </Form.Group>
@@ -220,21 +170,12 @@ export const UpdateExam = () => {
                             <Form.Label>Mortality</Form.Label>
                             <Form.Control 
                             name="mortality"  
-                            type="text" 
+                            type="text"
+                            placeholder={`Edit ${currentExam.MORTALITY}`}
                             maxLength={1}
                             value={selectedExam.MORTALITY} 
                             onChange={(e) => handleOnChange("MORTALITY", e.target.value)} />
                         </Form.Group>
-                        {/* <Form.Group controlId="formImage">
-                            <Form.Label>Image</Form.Label>
-                            <Form.Control 
-                            name="pngFilename" 
-                            type="text" 
-                            placeholder="Enter Image Address"
-                            onChange={(e) => setPng_filename(e.target.value)}
-                            value={png_filename} />
-                        </Form.Group> */}
-
                         <Button 
                             variant="primary" 
                             type="submit"
