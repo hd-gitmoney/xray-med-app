@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home.js';
 import ExamDetails from './components/ExamDetails/ExamDetails.js';
 import { UpdateExam } from './pages/UpdateExam.js';
-import NewExam from './pages/NewExam';
+import { NewExam } from './pages/NewExam';
 
 
 function App() {
