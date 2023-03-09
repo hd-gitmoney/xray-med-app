@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useExamsContext } from '../hooks/useExamsContext';
 
-export const UpdateExam = (route) => {
+export const UpdateExam = () => {
     const { exams, dispatch } = useExamsContext();
     const params = useParams();
     const navigate = useNavigate();
@@ -23,8 +23,8 @@ export const UpdateExam = (route) => {
         //Png_filename('COVID-19-AR-16434358_XR_CHEST_AP_PORTABLE_4.png')
     });
 
-    const currentExamId = route.match.params.id;
-    //const currentExamId = params.id;
+    //const currentExamId = route.match.params.id;
+    const currentExamId = params.id;
 
     useEffect(() => {
         const examId = currentExamId;

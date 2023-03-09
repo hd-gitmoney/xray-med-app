@@ -2,6 +2,10 @@
     box-sizing: border-box;
   }
 
+body {
+  padding-top: 150px;
+}
+
 .cancelButton{
   border: 2px solid grey;
   width: 150px;
@@ -18,4 +22,17 @@
 
 .titleDiv{
     width: 300px;
+}
+
+.searchBar{
+  width: 50%; 
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+
+@media (max-width: 450px) {
+  .searchBar{
+    width: 100%;
+  }
 }

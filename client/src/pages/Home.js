@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import { useExamsContext } from '../hooks/useExamsContext';
 import HomeRows from '../components/Home/HomeRows';
-import { Container, Form, InputGroup } from "react-bootstrap";
+import { Form, InputGroup } from "react-bootstrap";
 // import Placeholder from 'react-bootstrap/Placeholder';
 
 //TODO
@@ -31,13 +31,15 @@ const Home = () => {
 
     return(
       <div>
-                <InputGroup>
-                <Form.Control
-                
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder = 'search!'
-                />
-                </InputGroup>
+        <div className="searchBar" >
+          <InputGroup  size="lg" >
+              <InputGroup.Text id="inputGroup-sizing-lg">Search:</InputGroup.Text>
+              <Form.Control
+              
+              onChange={(e) => setSearch(e.target.value)}
+              />
+          </InputGroup>
+        </div>
                 <Table striped="columns" bordered hover>
                     <thead>
                         <tr>

@@ -1,4 +1,5 @@
-import NavBar from './components/NavBar.js';
+//import NavBar from './components/Navbar/NavBar.js';
+import NavBar from './components/NavBar'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home.js';
 //import Admin from './pages/Admin.js';
@@ -22,7 +23,6 @@ import { useState } from 'react';
 
 
 function App() {
-  //const { exams } = useApi();
 
   const [search, setSearch] = useState('')
 
