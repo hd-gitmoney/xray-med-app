@@ -6,10 +6,9 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="/">
             <img
-              src="favicon.png"
-              width="35"
-              height="30
-              "
+              src="favicon2.png"
+              width="38"
+              height="33"
               className="d-inline-block align-top"
               alt="Hack Logo"
             />
