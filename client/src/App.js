@@ -1,7 +1,7 @@
 import NavBar from './components/NavBar'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home.js';
-import { XrayForm }  from './components/Form/xrayForm';
+import NewExam  from './components/Form/NewExam.js';
 import ExamDetails from './components/ExamDetails/ExamDetails.js';
 import { UpdateExam } from './pages/UpdateExam.js';
 
@@ -17,7 +17,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route path="/examdetails/:id" element={<ExamDetails />} />
               <Route path="/edit/:id" element={<UpdateExam />} />
-              <Route path="/form" element={<XrayForm />} />
+              <Route path="/form" element={<NewExam />} />
             </Routes>
           </BrowserRouter>
       </header>
