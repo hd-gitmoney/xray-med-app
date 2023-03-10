@@ -47,7 +47,7 @@ const examSchema = new Schema({
         type: String,
         required: true
     }
-})
+},{ timestamps : true })
 
 
 //connecting to cluster named
