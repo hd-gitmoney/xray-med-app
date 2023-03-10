@@ -4,7 +4,6 @@ import Home from './pages/Home.js';
 import ExamDetails from './components/ExamDetails/ExamDetails.js';
 import { UpdateExam } from './pages/UpdateExam.js';
 import ExamForm from './pages/ExamForm';
-import TestingPage from './pages/TestingPage';
 
 function App() {
 
@@ -18,7 +17,6 @@ function App() {
               <Route path="/examdetails/:id" element={<ExamDetails />} />
               <Route path="/edit/:id" element={<UpdateExam />} />
               <Route exact path="/examform" element={<ExamForm />} /> 
-              <Route exact path="/test" element={<TestingPage />} /> 
             </Routes>
           </BrowserRouter>
       </header>
