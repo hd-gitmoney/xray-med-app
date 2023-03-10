@@ -29,10 +29,11 @@ app.use('/', examsRouter);
 mongoose.set("strictQuery", false);
 mongoose.connect(process.env.MONG_URI)
 .then(() => {
-  //listen to port for requests
-  app.listen(process.env.PORT, () =>{
-    console.log('connected to DB & listening on port', process.env.PORT)
-  })
+  console.log('connected to database')
+  //listen  to port
+  // app.listen(process.env.PORT, () =>{
+  //   console.log('listening for request on port', process.env.PORT)
+  // })
 })
 .catch((error) =>{
   console.log(error)
