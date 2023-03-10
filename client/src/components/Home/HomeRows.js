@@ -6,7 +6,7 @@ const HomeRows = ({ exam }) => {
   const { dispatch } = useExamsContext()
     
     const handleClick = async () => {
-        const response = await fetch(`/${exam._id}`, {
+        const response = await fetch(`https://xray-api-backend.onrender.com/${exam._id}`, {
             method: 'DELETE'
         })
         const json = await response.json()
