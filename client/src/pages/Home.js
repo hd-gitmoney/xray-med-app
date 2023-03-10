@@ -54,7 +54,7 @@ const Home = () => {
                                 return search === '' ? exam : 
                                 exam.AGE.includes(search) ? exam : 
                                 exam.SEX.includes(search) ? exam : 
-                                exam.PATIENT_ID.includes(search) ? exam : 
+                                exam.PATIENT_ID.toLowerCase().includes(search) ? exam : 
                                 exam.exam_Id.includes(search) ? exam : 
                                 exam.ZIP.includes(search) ? exam : 
                                 exam.LATESTWEIGHT.includes(search) ? exam :
