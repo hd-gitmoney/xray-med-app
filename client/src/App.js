@@ -3,8 +3,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home.js';
 import ExamDetails from './components/ExamDetails/ExamDetails.js';
 import { UpdateExam } from './pages/UpdateExam.js';
-import { NewExam } from './pages/NewExam';
-
+import ExamForm from './pages/ExamForm';
 
 function App() {
 
@@ -17,7 +16,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route path="/examdetails/:id" element={<ExamDetails />} />
               <Route path="/edit/:id" element={<UpdateExam />} />
-              <Route exact path="/newExam" element={ <NewExam /> } />
+              <Route exact path="/examform" element={<ExamForm />} /> 
             </Routes>
           </BrowserRouter>
       </header>

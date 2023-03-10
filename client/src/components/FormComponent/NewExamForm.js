@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Form, Alert } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-export const NewExam = () => {
+export const NewExamForm = () => {
 
     const [PATIENT_ID, setPATIENT_ID] = useState('');
     const [exam_Id, setExam_Id] = useState('');
